@@ -1,0 +1,17 @@
+.localisation {
+    background-color: #DEDEDE;
+    box-shadow: 5px 0px 5px 0px grey;
+    height: 50px;
+    margin-top: -15px;
+      &__ville {
+        font-weight: 300;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 15px;
+      }
+        &__position {
+          position: absolute;
+          margin-left: 90px;
+          margin-top: 15px;
+       }
+}
