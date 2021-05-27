@@ -1,0 +1,16 @@
+&__explore {
+    border-radius: 25px 25px 25px 25px;
+    width: 225px;
+    height: 50px;
+    margin-top: 70px;
+    border: none;
+      &--couleur {
+       color: white;
+       background: $color-secondary;
+       @include shadow;
+      }
+      &:hover {
+        @include hover;
+        @include hover-shadow;
+      }
+  }   
