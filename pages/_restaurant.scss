@@ -8,6 +8,7 @@
     padding-bottom: 60px;
     &--grey {
       background-color: $grisclair;
+      width: 100%;
     }
     h2 {
       margin-left: -200px;
@@ -15,6 +16,7 @@
     }
     &__list {
        width: 335px;
+       flex-wrap: wrap;
        margin-top: 20px;
        @include radius;
        height: 250px;
