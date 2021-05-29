@@ -9,7 +9,7 @@
 }
 
 body {
-  width: 100%;
+  width: auto;
   margin: 0;
   padding: 0;
 }
@@ -18,19 +18,28 @@ a {
   text-decoration: none;
 }
 
+header {
+  text-align: center;
+  width: 100%;
+}
 header h1 {
   text-align: center;
 }
 header .fa-arrow-left {
-  margin-top: 20px;
+  margin-top: 10px;
   position: absolute;
   font-size: 20px;
-  margin-left: 30px;
+  margin-left: -150px;
   color: black;
 }
 
 .basdepage {
   margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   background-color: #323333;
   padding-bottom: 30px;
@@ -74,9 +83,13 @@ header .fa-arrow-left {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   margin-top: 50px;
 }
 .fonction h2 {
@@ -127,6 +140,9 @@ header .fa-arrow-left {
   -webkit-box-shadow: 5px 0px 5px 0px grey;
           box-shadow: 5px 0px 5px 0px grey;
   height: 50px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: -15px;
   text-align: center;
 }
@@ -188,6 +204,9 @@ header .fa-arrow-left {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -196,6 +215,7 @@ header .fa-arrow-left {
 }
 .restaurant--grey {
   background-color: #f2f2f2;
+  width: 100%;
 }
 .restaurant h2 {
   margin-left: -200px;
@@ -203,6 +223,8 @@ header .fa-arrow-left {
 }
 .restaurant__list {
   width: 335px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 20px;
   border-radius: 25px 25px 25px 25px;
   height: 250px;
@@ -256,9 +278,4 @@ header .fa-arrow-left {
 }
 .restaurant__list .fa-heart {
   font-size: 25px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }/*# sourceMappingURL=ohMyFood.css.map */
