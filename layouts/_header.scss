@@ -1,13 +1,14 @@
 header { 
-
+  text-align: center;
+   width: 100%;
   h1 {
     text-align: center;
   }
   .fa-arrow-left {
-     margin-top: 20px; 
+     margin-top: 10px; 
      position: absolute;
      font-size: 20px;
-     margin-left: 30px;
+     margin-left: -150px;
      color: black;
   }
 }

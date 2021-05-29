@@ -1,0 +1,52 @@
+.nomresto {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-bottom: 60px;
+    margin-top: -70px;
+    border-radius: 25px 25px 0px 0px;
+    background-color: $grisclair;
+    h2{
+        margin-left: -140px;
+    }
+    &__bordinferieur{
+        border-bottom: 2px solid $color-tertiary;
+        width: 40px;
+        margin-top: -10px;
+        margin-left: -300px;
+    }
+    h3{
+        font-size: 14px;
+        font-weight: 100;
+        margin-left: -280px;
+        
+    }
+    &__carte {
+       width: 350px;
+       height: 60px;
+       margin-top: 10px;
+       border-radius: 15px 15px 15px 15px;
+       background-color: white;
+       @include shadow;
+       h4{
+           font-size: 12px;
+           margin-left: 20px;
+           font-weight: 500;
+       }
+       &__position {
+           position: absolute;
+           margin-top: -10px;
+           padding-left: 290px;
+       }
+       h5{
+           font-size: 10px;
+           font-weight: 100;
+           margin-left: 20px;
+           margin-top: -10px;
+       }
+    }
+
+}
