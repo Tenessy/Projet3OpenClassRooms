@@ -1,0 +1,26 @@
+@mixin fonction--shadow ($color: $grisclair) {
+  box-shadow: 5px 5px 5px 5px darken($color, 10%);
+}
+@mixin radius {
+  border-radius: 25px 25px 25px 25px;
+}
+@mixin hover($color: $color-secondary) {
+  background-color: lighten($color, 5%);
+}
+@mixin shadow ($color: $grisclair) {
+  box-shadow: 0px 15px 15px 15px darken($color, 5%);
+}
+@mixin hover-shadow($color: $grisclair) {
+  box-shadow: 15px 15px 25px 15px darken($color, 10%);
+}
+@mixin lighten-secondary($color: pastel($color-primary)) {
+  background: lighten($color, 1%);
+}
+@mixin lighten-tertiary ($color: $color-tertiary) {
+  background-color: lighten($color, 2%);
+  border-radius: 2px 2px 2px 2px;
+}
+
+@mixin darken-tertiary ($color: $color-tertiary) {
+  color: darken($color, 35%);
+}
