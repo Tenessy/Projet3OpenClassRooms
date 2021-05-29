@@ -1,7 +1,10 @@
 .localisation {
+  
     background-color: #DEDEDE;
     box-shadow: 5px 0px 5px 0px grey;
     height: 50px;
+    width: 100%;
+    flex-wrap: wrap;
     margin-top: -15px;
     text-align: center;
       &__ville {
