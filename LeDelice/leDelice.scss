@@ -1,0 +1,19 @@
+
+@import "../utils/variables";
+@import "../utils/mixin";
+@import "../base/police";
+@import "../components/button";
+@import "../layouts/header";
+@import "../layouts/footer";
+@import "../layouts/carteresto";
+
+
+.resto-img {
+    img {
+        width: 100%;
+    }
+}
+.basdepage {
+    position: absolute;
+    margin-top: 950px;
+}
