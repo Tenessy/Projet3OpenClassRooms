@@ -192,6 +192,7 @@ header .fa-arrow-left {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 70px;
+  position: relative;
   padding-bottom: 60px;
 }
 .restaurant--grey {
@@ -225,16 +226,18 @@ header .fa-arrow-left {
   width: 80px;
   height: 30px;
 }
-.restaurant__list__nouveau h3 {
+.restaurant__list__nouveau__nom {
   color: #2c9c81;
   font-size: 14px;
+  margin-top: 5px;
+  margin-left: 10px;
 }
 .restaurant__list img {
   height: 175px;
   width: 335px;
   border-radius: 15px 15px 0px 0px;
 }
-.restaurant__list h3 {
+.restaurant__list__nomplat {
   font-weight: 500;
   margin-top: 5px;
   width: 250px;
