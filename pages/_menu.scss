@@ -1,0 +1,40 @@
+.menu {
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    margin-top: -20px;
+      &--grey {
+        background: $grisclair;
+      } 
+        &__heading {
+          font-weight: 500;
+          height: 0;
+          padding-top: 30px;
+        }
+          &__under__heading{
+            font-weight: 100;
+            font-size: 18px;
+            padding-top: 50px;
+            height: 0;
+          }
+            &__explore {
+              border-radius: 25px 25px 25px 25px;
+              width: 225px;
+              height: 50px;
+              margin-top: 70px;
+              border: none;
+                &--couleur {
+                 color: white;
+                 background: $color-secondary;
+                 @include shadow;
+                }
+                &:hover {
+                  @include hover;
+                  @include hover-shadow;
+                }
+            }   
+}
+
+
+
+
