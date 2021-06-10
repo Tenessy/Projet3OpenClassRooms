@@ -1,9 +1,9 @@
 .shrikhand {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
 }
 
 .roboto {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: black;
 }
 
@@ -24,12 +24,11 @@ a {
   margin-top: 70px;
   border: none;
 }
-
 .explore--couleur {
   color: white;
-  background: #FF79DA;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA 10%, #9356DC);
 }
-
 .explore:hover {
   background-color: #ff93e1;
   -webkit-box-shadow: 15px 15px 25px 15px #d9d9d9;
@@ -39,7 +38,6 @@ a {
 header h1 {
   text-align: center;
 }
-
 header .fa-arrow-left {
   margin-top: 10px;
   position: absolute;
@@ -54,26 +52,22 @@ header .fa-arrow-left {
   background-color: #323333;
   padding-bottom: 30px;
 }
-
 .basdepage__lien {
   margin-left: 40px;
   padding-top: 10px;
   color: white;
 }
-
 .basdepage__lien h3 {
   color: white;
   font-size: 16px;
   margin-left: -20px;
 }
-
 .basdepage__lien__fafood {
   margin-top: 0;
   margin-left: -20px;
   position: absolute;
   font-size: 10px;
 }
-
 .basdepage__lien h4 {
   font-weight: 500;
   margin-top: -2px;
@@ -81,7 +75,6 @@ header .fa-arrow-left {
   font-size: 13px;
   margin-left: 0;
 }
-
 .basdepage__lien h5 {
   font-weight: 400;
   color: white;
@@ -105,28 +98,48 @@ header .fa-arrow-left {
           align-items: center;
   height: auto;
   padding-bottom: 60px;
-  margin-top: -70px;
+  margin-top: -80px;
   border-radius: 25px 25px 0px 0px;
   background-color: #f2f2f2;
 }
-
-.nomresto h2 {
-  margin-left: -140px;
+.nomresto__france {
+  margin-left: -180px;
 }
-
+.nomresto__palette {
+  margin-left: -100px;
+}
+.nomresto__delice {
+  margin-left: -130px;
+}
+.nomresto__note {
+  margin-left: -110px;
+}
+.nomresto__entre {
+  margin-left: -290px;
+}
+.nomresto__plat {
+  margin-left: -305px;
+}
+.nomresto__dessert {
+  margin-left: -285px;
+}
 .nomresto__bordinferieur {
   border-bottom: 2px solid #99E2D0;
   width: 40px;
   margin-top: -10px;
   margin-left: -300px;
 }
-
-.nomresto h3 {
-  font-size: 14px;
+.nomresto__heart {
   font-weight: 100;
-  margin-left: -290px;
+  margin-left: 110px;
+  margin-top: 25px;
+  font-size: 22px;
+  position: absolute;
 }
-
+.nomresto h3 {
+  font-size: 12px;
+  font-weight: 100;
+}
 .nomresto__carte {
   width: 350px;
   height: 60px;
@@ -136,21 +149,62 @@ header .fa-arrow-left {
   -webkit-box-shadow: 0px 15px 15px 15px #e5e5e5;
           box-shadow: 0px 15px 15px 15px #e5e5e5;
 }
-
+.nomresto__carte:hover > .nomresto__carte__ajouter {
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+  opacity: 1;
+}
+.nomresto__carte:hover > .nomresto__carte__ajouter > .nomresto__carte__ajouter__validate {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.nomresto__carte:hover > .nomresto__carte__position {
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+}
+.nomresto__carte__ajouter {
+  width: 50px;
+  height: 60px;
+  position: absolute;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+  margin-left: 360px;
+  margin-top: -67px;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+}
+.nomresto__carte__ajouter__validate {
+  margin-top: 20px;
+  margin-left: 15px;
+  color: white;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+}
 .nomresto__carte h4 {
   font-size: 12px;
   margin-left: 20px;
   font-weight: 500;
 }
-
 .nomresto__carte__position {
   position: absolute;
   margin-top: -10px;
   padding-left: 290px;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }
-
 .nomresto__carte h5 {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 100;
   margin-left: 20px;
   margin-top: -10px;
@@ -158,11 +212,18 @@ header .fa-arrow-left {
 
 .resto-img img {
   width: 100%;
-  height: 300px;
+  height: 350px;
 }
 
 .basdepage {
   position: absolute;
-  margin-top: 920px;
+  margin-top: 900px;
 }
-/*# sourceMappingURL=leDelice.css.map */
+
+.position__basdepage {
+  margin-top: 1000px;
+}
+
+.nomresto__padding {
+  padding-bottom: 100px;
+}/*# sourceMappingURL=leDelice.css.map */
