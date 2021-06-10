@@ -1,10 +1,10 @@
 @charset "UTF-8";
 .shrikhand {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
 }
 
 .roboto {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: black;
 }
 
@@ -21,7 +21,6 @@ a {
 header h1 {
   text-align: center;
 }
-
 header .fa-arrow-left {
   margin-top: 10px;
   position: absolute;
@@ -36,26 +35,22 @@ header .fa-arrow-left {
   background-color: #323333;
   padding-bottom: 30px;
 }
-
 .basdepage__lien {
   margin-left: 40px;
   padding-top: 10px;
   color: white;
 }
-
 .basdepage__lien h3 {
   color: white;
   font-size: 16px;
   margin-left: -20px;
 }
-
 .basdepage__lien__fafood {
   margin-top: 0;
   margin-left: -20px;
   position: absolute;
   font-size: 10px;
 }
-
 .basdepage__lien h4 {
   font-weight: 500;
   margin-top: -2px;
@@ -63,7 +58,6 @@ header .fa-arrow-left {
   font-size: 13px;
   margin-left: 0;
 }
-
 .basdepage__lien h5 {
   font-weight: 400;
   color: white;
@@ -85,11 +79,9 @@ header .fa-arrow-left {
           align-items: center;
   margin-top: 50px;
 }
-
 .fonction h2 {
   margin-left: -150px;
 }
-
 .fonction__fonctionnalité {
   width: 330px;
   height: 75px;
@@ -98,33 +90,27 @@ header .fa-arrow-left {
   -webkit-box-shadow: 5px 5px 5px 5px #d9d9d9;
           box-shadow: 5px 5px 5px 5px #d9d9d9;
 }
-
 .fonction__fonctionnalité--clair {
   background: #f4ebff;
 }
-
 .fonction__fonctionnalité h3 {
   font-weight: 400;
   text-align: center;
   font-size: 16px;
   margin-top: 30px;
 }
-
 .fonction__fonctionnalité h4 {
   font-size: 12px;
 }
-
 .fonction__fonctionnalité__feature {
   position: absolute;
   margin-top: 30px;
   margin-left: 50px;
   color: grey;
 }
-
 .fonction__fonctionnalité__feature--colori {
   color: #9356DC;
 }
-
 .fonction__fonctionnalité__cercle {
   border-radius: 50%;
   height: 20px;
@@ -144,13 +130,11 @@ header .fa-arrow-left {
   margin-top: -15px;
   text-align: center;
 }
-
 .localisation__ville {
   font-weight: 300;
   font-size: 16px;
   padding-top: 15px;
 }
-
 .localisation__position {
   position: absolute;
   margin-top: 15px;
@@ -163,24 +147,20 @@ header .fa-arrow-left {
   height: 300px;
   margin-top: -20px;
 }
-
 .menu--grey {
   background: #f2f2f2;
 }
-
 .menu__heading {
   font-weight: 500;
   height: 0;
   padding-top: 30px;
 }
-
 .menu__under__heading {
   font-weight: 100;
   font-size: 18px;
   padding-top: 50px;
   height: 0;
 }
-
 .menu__explore {
   border-radius: 25px 25px 25px 25px;
   width: 225px;
@@ -188,14 +168,13 @@ header .fa-arrow-left {
   margin-top: 70px;
   border: none;
 }
-
 .menu__explore--couleur {
   color: white;
-  background: #FF79DA;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA 10%, #9356DC);
   -webkit-box-shadow: 0px 15px 15px 15px #e5e5e5;
           box-shadow: 0px 15px 15px 15px #e5e5e5;
 }
-
 .menu__explore:hover {
   background-color: #ff93e1;
   -webkit-box-shadow: 15px 15px 25px 15px #d9d9d9;
@@ -217,16 +196,13 @@ header .fa-arrow-left {
   position: relative;
   padding-bottom: 60px;
 }
-
 .restaurant--grey {
   background-color: #f2f2f2;
 }
-
 .restaurant h2 {
   margin-left: -200px;
   padding-top: 60px;
 }
-
 .restaurant__list {
   width: 335px;
   margin-top: 20px;
@@ -235,15 +211,12 @@ header .fa-arrow-left {
   -webkit-box-shadow: 0px 0px 5px 5px #f2f2f2;
           box-shadow: 0px 0px 5px 5px #f2f2f2;
 }
-
 .restaurant__list__position {
   margin-top: 0;
 }
-
 .restaurant__list--fondblanc {
   background-color: white;
 }
-
 .restaurant__list__nouveau {
   background-color: #a1e4d4;
   border-radius: 2px 2px 2px 2px;
@@ -254,27 +227,23 @@ header .fa-arrow-left {
   width: 80px;
   height: 30px;
 }
-
 .restaurant__list__nouveau__nom {
   color: #2c9c81;
   font-size: 14px;
   margin-top: 5px;
   margin-left: 10px;
 }
-
 .restaurant__list img {
   height: 175px;
   width: 335px;
   border-radius: 15px 15px 0px 0px;
 }
-
 .restaurant__list__nomplat {
   font-weight: 500;
   margin-top: 5px;
   width: 250px;
   margin-left: 10px;
 }
-
 .restaurant__list h4 {
   font-weight: 300;
   margin-top: -15px;
@@ -282,7 +251,6 @@ header .fa-arrow-left {
   width: 150px;
   height: 0;
 }
-
 .restaurant__list__heart {
   position: absolute;
   margin-top: -40px;
@@ -290,7 +258,6 @@ header .fa-arrow-left {
   color: black;
   font-size: 10px;
 }
-
 .restaurant__list .fa-heart {
   font-size: 25px;
 }
@@ -298,5 +265,4 @@ header .fa-arrow-left {
 body {
   margin: 0;
   padding: 0;
-}
-/*# sourceMappingURL=ohMyFood.css.map */
+}/*# sourceMappingURL=ohMyFood.css.map */
