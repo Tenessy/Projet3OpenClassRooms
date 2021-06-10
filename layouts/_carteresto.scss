@@ -6,11 +6,29 @@
     align-items: center;
     height: auto;
     padding-bottom: 60px;
-    margin-top: -70px;
+    margin-top: -80px;
     border-radius: 25px 25px 0px 0px;
     background-color: #f2f2f2;
-    h2 {
-       margin-left: -140px;
+    &__france {
+      margin-left: -180px;
+    }
+    &__palette {
+      margin-left: -100px;
+    }
+    &__delice {
+      margin-left: -130px;
+    }
+    &__note {
+      margin-left: -110px;
+    }
+    &__entre {
+      margin-left: -290px;
+    }
+    &__plat {
+      margin-left: -305px;
+    }
+    &__dessert {
+      margin-left: -285px;
     }
    &__bordinferieur {
     border-bottom: 2px solid #99E2D0;
@@ -18,30 +36,68 @@
     margin-top: -10px;
     margin-left: -300px;
    }
+   &__heart {
+     font-weight: 100;
+     margin-left: 110px;
+     margin-top: 25px;
+     font-size: 22px;
+     position: absolute;
+   }
    h3 {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 100;
-    margin-left: -290px;
    }
     &__carte {
-     width: 350px;
-     height: 60px;
-     margin-top: 10px;
-     border-radius: 15px 15px 15px 15px;
-     background-color: white;
-     box-shadow: 0px 15px 15px 15px #e5e5e5;
+      width: 350px;
+      height: 60px;
+      margin-top: 10px;
+      border-radius: 15px 15px 15px 15px;
+      background-color: white;
+      box-shadow: 0px 15px 15px 15px #e5e5e5;
+      &:hover > .nomresto__carte__ajouter{
+        transform: translateX(-60px);
+        opacity: 1;
+        & > .nomresto__carte__ajouter__validate {
+            transform: rotate(360deg);
+        } 
+      }
+      &:hover > .nomresto__carte__position {
+        transform: translateX(-60px);
+      }
+      &__ajouter {
+        width: 50px;
+        height: 60px;
+        position: absolute;
+        border-radius: 0px 15px 15px 0px;
+        background-color: $color-tertiary;
+        margin-left: 360px;
+        margin-top: -67px;
+        opacity: 0;
+        transition: transform 400ms ease-in-out;
+        &__validate {
+          margin-top: 20px;
+          margin-left: 15px;
+          color: white;
+          transform: rotate(0deg);
+          transition: transform 400ms ease-in-out;
+        }
+      }
       h4 {
         font-size: 12px;
         margin-left: 20px;
         font-weight: 500;
+    
       } 
       &__position {
         position: absolute;
         margin-top: -10px;
         padding-left: 290px;
+        transform: translateX(0);
+        transition: transform 400ms ease-in-out;
       }
+      
       h5 {
-        font-size: 10px;
+        font-size: 11px;
         font-weight: 100;
         margin-left: 20px;
         margin-top: -10px;
@@ -50,3 +106,4 @@
     }
 
 }
+
