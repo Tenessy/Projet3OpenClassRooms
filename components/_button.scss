@@ -6,11 +6,12 @@
     border: none;
       &--couleur {
        color: white;
-       background: $color-secondary;
+       background: linear-gradient($color-secondary 10%, $color-primary);
        
       }
       &:hover {
         @include hover;
         @include hover-shadow;
+        
       }
   }   
