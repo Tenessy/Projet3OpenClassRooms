@@ -60,9 +60,12 @@
       }
         &__heart {
           position: absolute;
+          overflow: hidden;
           margin-top: -40px;
           margin-left: 270px;
           color: black;
+          background: linear-gradient($color-secondary 10%, $color-primary);
+          background-size: 200%;
           font-size: 10px;
         }
         .fa-heart { 
