@@ -52,36 +52,47 @@
     &__carte {
       width: 350px;
       height: 60px;
+      overflow: hidden;
       margin-top: 10px;
       border-radius: 15px 15px 15px 15px;
       background-color: white;
       box-shadow: 0px 15px 15px 15px #e5e5e5;
+      
       &:hover > .nomresto__carte__ajouter{
         transform: translateX(-50px);
-        visibility: visible;
         & > .nomresto__carte__ajouter__validate {
-            transform: rotate(360deg);
+            transform: rotate(0turn);
         } 
       }
       &:hover > .nomresto__carte__position {
         transform: translateX(-60px);
       }
+      &__progres {
+        animation: apparition-progressive 1500ms 150ms;
+      }
+      &__progression {
+        animation: apparition-progressive 1500ms 250ms;
+      }
+      &__progressionfinal {
+        animation: apparition-progressive 1500ms 350ms;
+      }
+      &__progressionfinalite {
+        animation: apparition-progressive 1500ms 450ms;
+      }
       &__ajouter {
         width: 50px;
         height: 61px;
-        position: absolute;
         border-radius: 0px 15px 15px 0px;
         background-color: $color-tertiary;
         margin-left: 350px;
         margin-top: -68px;
-        visibility: hidden;
-        transition: visibility 0ms linear, transform 400ms ease-in-out;
+        transition: transform 400ms ease-in-out;
         &__validate {
           margin-top: 20px;
           margin-left: 15px;
           color: white;
-          transform: rotate(0deg);
-          transition: transform 500ms ease-in-out;
+          transform: rotate(1turn);
+          transition: transform 400ms ease-in;        
         }
       }
       h4 {
@@ -107,5 +118,24 @@
 
     }
 
+}
+@keyframes apparition-progressive {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;  
+    transform:translateY(20%);
+  }
+  50% {
+    opacity: 0.65;
+  }
+  75% {
+    opacity: 0.85;
+  } 
+  100%{
+    opacity: 1;
+
+  }
 }
 
