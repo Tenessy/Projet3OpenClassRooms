@@ -126,19 +126,19 @@ header .fa-arrow-left {
 .nomresto__bordinferieur {
   border-bottom: 2px solid #99E2D0;
   width: 40px;
-  margin-top: -10px;
+  margin-top: -5px;
   margin-left: -300px;
 }
 .nomresto__heart {
   font-weight: 100;
-  margin-left: 110px;
-  margin-top: 25px;
+  margin-left: 240px;
+  margin-top: -50px;
   font-size: 22px;
-  position: absolute;
 }
 .nomresto h3 {
   font-size: 12px;
   font-weight: 100;
+  margin-top: 30px;
 }
 .nomresto__carte {
   width: 350px;
@@ -150,9 +150,9 @@ header .fa-arrow-left {
           box-shadow: 0px 15px 15px 15px #e5e5e5;
 }
 .nomresto__carte:hover > .nomresto__carte__ajouter {
-  -webkit-transform: translateX(-60px);
-          transform: translateX(-60px);
-  opacity: 1;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  visibility: visible;
 }
 .nomresto__carte:hover > .nomresto__carte__ajouter > .nomresto__carte__ajouter__validate {
   -webkit-transform: rotate(360deg);
@@ -164,17 +164,17 @@ header .fa-arrow-left {
 }
 .nomresto__carte__ajouter {
   width: 50px;
-  height: 60px;
+  height: 61px;
   position: absolute;
   border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
-  margin-left: 360px;
-  margin-top: -67px;
-  opacity: 0;
-  -webkit-transition: -webkit-transform 400ms ease-in-out;
-  transition: -webkit-transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+  margin-left: 350px;
+  margin-top: -68px;
+  visibility: hidden;
+  -webkit-transition: visibility 0ms linear, -webkit-transform 400ms ease-in-out;
+  transition: visibility 0ms linear, -webkit-transform 400ms ease-in-out;
+  transition: visibility 0ms linear, transform 400ms ease-in-out;
+  transition: visibility 0ms linear, transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }
 .nomresto__carte__ajouter__validate {
   margin-top: 20px;
@@ -182,10 +182,10 @@ header .fa-arrow-left {
   color: white;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  -webkit-transition: -webkit-transform 400ms ease-in-out;
-  transition: -webkit-transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 .nomresto__carte h4 {
   font-size: 12px;
@@ -217,7 +217,7 @@ header .fa-arrow-left {
 
 .basdepage {
   position: absolute;
-  margin-top: 900px;
+  margin-top: 930px;
 }
 
 .position__basdepage {
