@@ -23,6 +23,7 @@
     }
     &__entre {
       margin-left: -290px;
+    
     }
     &__plat {
       margin-left: -305px;
@@ -33,19 +34,20 @@
    &__bordinferieur {
     border-bottom: 2px solid #99E2D0;
     width: 40px;
-    margin-top: -10px;
+    margin-top: -5px;
     margin-left: -300px;
    }
    &__heart {
      font-weight: 100;
-     margin-left: 110px;
-     margin-top: 25px;
+     margin-left: 240px;
+     margin-top: -50px;
      font-size: 22px;
-     position: absolute;
+  
    }
    h3 {
     font-size: 12px;
     font-weight: 100;
+    margin-top: 30px;
    }
     &__carte {
       width: 350px;
@@ -55,8 +57,8 @@
       background-color: white;
       box-shadow: 0px 15px 15px 15px #e5e5e5;
       &:hover > .nomresto__carte__ajouter{
-        transform: translateX(-60px);
-        opacity: 1;
+        transform: translateX(-50px);
+        visibility: visible;
         & > .nomresto__carte__ajouter__validate {
             transform: rotate(360deg);
         } 
@@ -66,20 +68,20 @@
       }
       &__ajouter {
         width: 50px;
-        height: 60px;
+        height: 61px;
         position: absolute;
         border-radius: 0px 15px 15px 0px;
         background-color: $color-tertiary;
-        margin-left: 360px;
-        margin-top: -67px;
-        opacity: 0;
-        transition: transform 400ms ease-in-out;
+        margin-left: 350px;
+        margin-top: -68px;
+        visibility: hidden;
+        transition: visibility 0ms linear, transform 400ms ease-in-out;
         &__validate {
           margin-top: 20px;
           margin-left: 15px;
           color: white;
           transform: rotate(0deg);
-          transition: transform 400ms ease-in-out;
+          transition: transform 500ms ease-in-out;
         }
       }
       h4 {
