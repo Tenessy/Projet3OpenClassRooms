@@ -18,6 +18,23 @@ a {
   text-decoration: none;
 }
 
+@-webkit-keyframes progress-heart {
+  from {
+    background: none;
+  }
+  to {
+    background: red;
+  }
+}
+
+@keyframes progress-heart {
+  from {
+    background: none;
+  }
+  to {
+    background: red;
+  }
+}
 header h1 {
   text-align: center;
 }
@@ -253,9 +270,13 @@ header .fa-arrow-left {
 }
 .restaurant__list__heart {
   position: absolute;
+  overflow: hidden;
   margin-top: -40px;
   margin-left: 270px;
   color: black;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA 10%, #9356DC);
+  background-size: 200%;
   font-size: 10px;
 }
 .restaurant__list .fa-heart {
