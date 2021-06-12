@@ -10,10 +10,10 @@
     border-radius: 25px 25px 0px 0px;
     background-color: #f2f2f2;
     &__france {
-      margin-left: -180px;
+      margin-left: -170px;
     }
     &__palette {
-      margin-left: -100px;
+      margin-left: -120px;
     }
     &__delice {
       margin-left: -130px;
@@ -57,15 +57,14 @@
       border-radius: 15px 15px 15px 15px;
       background-color: white;
       box-shadow: 0px 15px 15px 15px #e5e5e5;
-      
       &:hover > .nomresto__carte__ajouter{
-        transform: translateX(-50px);
+        transform: translateX(-100%);
         & > .nomresto__carte__ajouter__validate {
-            transform: rotate(0turn);
+          transform: rotate(0turn);
         } 
       }
       &:hover > .nomresto__carte__position {
-        transform: translateX(-60px);
+        transform: translateX(-20%);
       }
       &__progres {
         animation: apparition-progressive 1500ms 150ms;
@@ -83,39 +82,45 @@
         width: 50px;
         height: 61px;
         border-radius: 0px 15px 15px 0px;
-        background-color: $color-tertiary;
         margin-left: 350px;
         margin-top: -68px;
-        transition: transform 400ms ease-in-out;
+        &--color {
+          background-color: $color-tertiary;
+        } 
+        &--trans {
+          @include transform;
+        }  
         &__validate {
           margin-top: 20px;
           margin-left: 15px;
           color: white;
-          transform: rotate(1turn);
-          transition: transform 400ms ease-in;        
+          &--rotation {
+            transform: rotate(1turn);
+             @include transform;
+          }      
         }
       }
       h4 {
         font-size: 12px;
         margin-left: 20px;
         font-weight: 500;
-    
       } 
       &__position {
         position: absolute;
         margin-top: -10px;
         padding-left: 290px;
-        transform: translateX(0);
-        transition: transform 400ms ease-in-out;
+        &--trans {
+          transform: translateX(0);
+          @include transform;
+        }
       }
-      
       h5 {
         font-size: 11px;
         font-weight: 100;
         margin-left: 20px;
         margin-top: -10px;
       }
-
+      
     }
 
 }
