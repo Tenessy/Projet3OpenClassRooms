@@ -6,12 +6,10 @@
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./components/fonctionnalité";
+@import "./components/button";
 @import "./pages/localisation";
 @import "./pages/menu";
 @import "./pages/restaurant";
 
-body {
-    margin: 0;
-    padding: 0;
-}
+
 
