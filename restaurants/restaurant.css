@@ -23,16 +23,35 @@ a {
   height: 50px;
   margin-top: 70px;
   border: none;
+  position: relative;
+  z-index: 1;
+}
+.explore:hover {
+  -webkit-box-shadow: 15px 15px 25px 15px #d9d9d9;
+          box-shadow: 15px 15px 25px 15px #d9d9d9;
+}
+.explore:hover::after {
+  opacity: 1;
 }
 .explore--couleur {
   color: white;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA 10%, #9356DC);
 }
-.explore:hover {
-  background-color: #ff93e1;
-  -webkit-box-shadow: 15px 15px 25px 15px #d9d9d9;
-          box-shadow: 15px 15px 25px 15px #d9d9d9;
+.explore::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 25px 25px 25px 25px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #ff93e1), to(#a16be0));
+  background: linear-gradient(#ff93e1 10%, #a16be0);
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
 }
 
 header h1 {
@@ -103,10 +122,10 @@ header .fa-arrow-left {
   background-color: #f2f2f2;
 }
 .nomresto__france {
-  margin-left: -180px;
+  margin-left: -170px;
 }
 .nomresto__palette {
-  margin-left: -100px;
+  margin-left: -120px;
 }
 .nomresto__delice {
   margin-left: -130px;
@@ -151,16 +170,16 @@ header .fa-arrow-left {
           box-shadow: 0px 15px 15px 15px #e5e5e5;
 }
 .nomresto__carte:hover > .nomresto__carte__ajouter {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 .nomresto__carte:hover > .nomresto__carte__ajouter > .nomresto__carte__ajouter__validate {
   -webkit-transform: rotate(0turn);
           transform: rotate(0turn);
 }
 .nomresto__carte:hover > .nomresto__carte__position {
-  -webkit-transform: translateX(-60px);
-          transform: translateX(-60px);
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
 }
 .nomresto__carte__progres {
   -webkit-animation: apparition-progressive 1500ms 150ms;
@@ -182,9 +201,13 @@ header .fa-arrow-left {
   width: 50px;
   height: 61px;
   border-radius: 0px 15px 15px 0px;
-  background-color: #99E2D0;
   margin-left: 350px;
   margin-top: -68px;
+}
+.nomresto__carte__ajouter--color {
+  background-color: #99E2D0;
+}
+.nomresto__carte__ajouter--trans {
   -webkit-transition: -webkit-transform 400ms ease-in-out;
   transition: -webkit-transform 400ms ease-in-out;
   transition: transform 400ms ease-in-out;
@@ -194,12 +217,14 @@ header .fa-arrow-left {
   margin-top: 20px;
   margin-left: 15px;
   color: white;
+}
+.nomresto__carte__ajouter__validate--rotation {
   -webkit-transform: rotate(1turn);
           transform: rotate(1turn);
-  -webkit-transition: -webkit-transform 400ms ease-in;
-  transition: -webkit-transform 400ms ease-in;
-  transition: transform 400ms ease-in;
-  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }
 .nomresto__carte h4 {
   font-size: 12px;
@@ -210,6 +235,8 @@ header .fa-arrow-left {
   position: absolute;
   margin-top: -10px;
   padding-left: 290px;
+}
+.nomresto__carte__position--trans {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   -webkit-transition: -webkit-transform 400ms ease-in-out;
@@ -279,4 +306,4 @@ header .fa-arrow-left {
 
 .nomresto__padding {
   padding-bottom: 100px;
-}/*# sourceMappingURL=leDelice.css.map */
+}/*# sourceMappingURL=restaurant.css.map */
