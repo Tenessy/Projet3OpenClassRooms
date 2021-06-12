@@ -20,7 +20,12 @@
   background-color: lighten($color, 2%);
   border-radius: 2px 2px 2px 2px;
 }
-
 @mixin darken-tertiary ($color: $color-tertiary) {
   color: darken($color, 35%);
+}
+@mixin transform {
+  transition: transform 400ms ease-in-out; 
+}
+@mixin lighten-gradient ($color: $color-secondary , $color2: $color-primary) {
+  background: linear-gradient(lighten($color, 5%) 10%, lighten($color2, 5%));
 }
