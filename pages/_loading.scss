@@ -1,0 +1,33 @@
+$cd-bars: #15DEA5;
+$size: 3vh;
+$anim-dur: 2000ms;
+body {
+    animation: cache 500ms;
+}
+.load {
+    width: $size*20;
+    height: $size*15;
+    display: flex;
+    justify-content: space-evenly;
+    &__bar {
+        background-color: $cd-bars;
+        height: 100%;
+        width: $size;
+        animation: bars $anim-dur;      
+    }    
+}
+.container {
+   opacity: 0;
+   transition: opacity 2s;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   animation: fond $anim-dur;
+}
+
+
