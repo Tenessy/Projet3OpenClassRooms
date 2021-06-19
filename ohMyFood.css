@@ -110,21 +110,37 @@ a {
   }
 }
 @-webkit-keyframes fond {
-  from {
+  0% {
     background: rgba(0, 0, 0, 0.8);
     z-index: 99;
   }
-  to {
+  50% {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+  }
+  75% {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+  }
+  100% {
     background: rgba(0, 0, 0, 0.6);
     z-index: 99;
   }
 }
 @keyframes fond {
-  from {
+  0% {
     background: rgba(0, 0, 0, 0.8);
     z-index: 99;
   }
-  to {
+  50% {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+  }
+  75% {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+  }
+  100% {
     background: rgba(0, 0, 0, 0.6);
     z-index: 99;
   }
@@ -238,6 +254,7 @@ header .fa-arrow-left {
   width: 225px;
   height: 50px;
   margin-top: 70px;
+  font-size: 16px;
   border: none;
   position: relative;
   z-index: 1;
@@ -286,17 +303,38 @@ body {
           justify-content: space-evenly;
 }
 .load__bar {
-  background-color: #15DEA5;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA 10%, #9356DC);
   height: 100%;
   width: 3vh;
-  -webkit-animation: bars 2000ms;
-          animation: bars 2000ms;
+  -webkit-animation: bars 1000ms backwards infinite;
+          animation: bars 1000ms backwards infinite;
+}
+.load__bar--1 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+.load__bar--2 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+.load__bar--3 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+.load__bar--4 {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+.load__bar--5 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
 }
 
 .container {
   opacity: 0;
-  -webkit-transition: opacity 2s;
-  transition: opacity 2s;
+  -webkit-transition: opacity 2000ms;
+  transition: opacity 2000ms;
   position: fixed;
   top: 0;
   left: 0;
@@ -311,8 +349,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-animation: fond 2000ms;
-          animation: fond 2000ms;
+  -webkit-animation: fond 3000ms;
+          animation: fond 3000ms;
 }
 
 .localisation {
@@ -425,17 +463,60 @@ body {
   width: 150px;
   height: 0;
 }
-.restaurant__list__heart {
-  position: absolute;
+.restaurant__list a {
   overflow: hidden;
-  margin-top: -40px;
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+.restaurant__list__depassement {
+  width: 27px;
+  height: 26px;
+  background-color: white;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 30px 25px 5px 25px;
   margin-left: 270px;
+  margin-top: -45px;
+  z-index: 2;
+  overflow: hidden;
+}
+.restaurant__list__depassement .fa-heart {
+  margin-top: -40px;
+  position: relative;
+  display: block;
   color: black;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 5px;
+  right: 0;
+  bottom: 0;
+  font-size: 26px;
+  top: 44px;
+  position: relative;
+  z-index: 1;
+}
+.restaurant__list__depassement .fa-heart:hover::after {
+  -webkit-transform: translateY(-20.8px);
+          transform: translateY(-20.8px);
+  cursor: pointer;
+}
+.restaurant__list__depassement .fa-heart::after {
+  content: "";
+  position: absolute;
+  border-radius: 75%/8%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA 10%, #9356DC);
-  background-size: 200%;
-  font-size: 10px;
-}
-.restaurant__list .fa-heart {
-  font-size: 25px;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+  transition: -webkit-transform 3s ease-in-out;
+  transition: transform 3s ease-in-out;
+  transition: transform 3s ease-in-out, -webkit-transform 3s ease-in-out;
+  top: 25px;
+  left: 2px;
+  right: 0;
+  bottom: 0;
+  height: 22px;
+  width: 22px;
+  z-index: -1;
 }/*# sourceMappingURL=ohMyFood.css.map */
