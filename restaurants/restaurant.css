@@ -89,21 +89,37 @@
   }
 }
 @-webkit-keyframes fond {
-  from {
+  0% {
     background: rgba(0, 0, 0, 0.8);
     z-index: 99;
   }
-  to {
+  50% {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+  }
+  75% {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+  }
+  100% {
     background: rgba(0, 0, 0, 0.6);
     z-index: 99;
   }
 }
 @keyframes fond {
-  from {
+  0% {
     background: rgba(0, 0, 0, 0.8);
     z-index: 99;
   }
-  to {
+  50% {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+  }
+  75% {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+  }
+  100% {
     background: rgba(0, 0, 0, 0.6);
     z-index: 99;
   }
@@ -132,6 +148,7 @@ a {
   width: 225px;
   height: 50px;
   margin-top: 70px;
+  font-size: 16px;
   border: none;
   position: relative;
   z-index: 1;
@@ -291,21 +308,25 @@ header .fa-arrow-left {
   -webkit-transform: translateX(-20%);
           transform: translateX(-20%);
 }
-.nomresto__carte__progres {
-  -webkit-animation: apparition-progressive 1500ms 150ms;
-          animation: apparition-progressive 1500ms 150ms;
+.nomresto__carte__progressive {
+  -webkit-animation: apparition-progressive 1500ms;
+          animation: apparition-progressive 1500ms;
 }
-.nomresto__carte__progression {
-  -webkit-animation: apparition-progressive 1500ms 250ms;
-          animation: apparition-progressive 1500ms 250ms;
+.nomresto__carte__progressive--1 {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
 }
-.nomresto__carte__progressionfinal {
-  -webkit-animation: apparition-progressive 1500ms 350ms;
-          animation: apparition-progressive 1500ms 350ms;
+.nomresto__carte__progressive--2 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
-.nomresto__carte__progressionfinalite {
-  -webkit-animation: apparition-progressive 1500ms 450ms;
-          animation: apparition-progressive 1500ms 450ms;
+.nomresto__carte__progressive--3 {
+  -webkit-animation-delay: 450ms;
+          animation-delay: 450ms;
+}
+.nomresto__carte__progressive--4 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 .nomresto__carte__ajouter {
   width: 50px;
@@ -338,7 +359,7 @@ header .fa-arrow-left {
 }
 .nomresto__carte h4 {
   font-size: 12px;
-  margin-left: 20px;
+  margin-left: 10px;
   font-weight: 500;
 }
 .nomresto__carte__position {
@@ -357,7 +378,7 @@ header .fa-arrow-left {
 .nomresto__carte h5 {
   font-size: 11px;
   font-weight: 100;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: -10px;
 }
 
