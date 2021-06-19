@@ -58,20 +58,58 @@
         width: 150px;
         height: 0;
       }
-        &__heart {
+        a {
+          overflow:hidden;
+          width: 25px;
+          height: 25px;
+          position: relative;
+        }
+        &__depassement {
+          width: 27px; 
+          height: 26px; 
+          background-color: white; 
           position: absolute;
+          transform: rotate(45deg);
+          border-radius: 30px 25px 5px 25px;
+          margin-left: 270px; 
+          margin-top: -45px; 
+          z-index: 2;
           overflow: hidden;
-          margin-top: -40px;
-          margin-left: 270px;
-          color: black;
-          background: linear-gradient($color-secondary 10%, $color-primary);
-          background-size: 200%;
-          font-size: 10px;
-        }
-        .fa-heart { 
-          font-size: 25px;
-        }
+          .fa-heart {
+            margin-top: -40px;
+            position: relative;
+            display: block;
+            color: black;
+            transform: rotate(-45deg);
+            left: 5px;
+            right: 0;
+            bottom: 0;
+            font-size: 26px;
+            top: 44px;
+            position: relative;
+            z-index: 1;
+            &:hover {
+              &::after {
+                transform: translateY(-20.8px);
+                cursor: pointer;
+              }
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              border-radius: 75%/8%;
+              background: $lineargradient;
+              transition: transform 3s ease-in-out;
+              top: 25px;
+              left: 2px;
+              right: 0;
+              bottom: 0;
+              height: 22px;
+              width: 22px;
+              z-index: -1;
+            } 
+          }
+        }   
     }
-}
-  
+}  
   

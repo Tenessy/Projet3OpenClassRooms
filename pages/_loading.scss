@@ -1,6 +1,9 @@
 $cd-bars: #15DEA5;
 $size: 3vh;
-$anim-dur: 2000ms;
+$num-bars: 5;
+$anim-dur: 1000ms;
+$contain-dur: 3000ms;
+$anim-delay: $anim-dur / $num-bars;
 body {
     animation: cache 500ms;
 }
@@ -10,15 +13,20 @@ body {
     display: flex;
     justify-content: space-evenly;
     &__bar {
-        background-color: $cd-bars;
-        height: 100%;
-        width: $size;
-        animation: bars $anim-dur;      
+      background: $lineargradient;
+      height: 100%;
+      width: $size;
+      animation: bars $anim-dur backwards infinite;
+      @for $i from 1 through $num-bars {
+          &--#{$i} {
+            animation-delay: $anim-delay * $i;
+          }
+       }      
     }    
 }
 .container {
    opacity: 0;
-   transition: opacity 2s;
+   transition: opacity 2000ms;
    position: fixed;
    top: 0;
    left: 0;
@@ -27,7 +35,7 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-   animation: fond $anim-dur;
+   animation: fond $contain-dur;
 }
 
 
