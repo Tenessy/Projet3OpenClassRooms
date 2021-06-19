@@ -66,17 +66,13 @@
       &:hover > .nomresto__carte__position {
         transform: translateX(-20%);
       }
-      &__progres {
-        animation: apparition-progressive 1500ms 150ms;
-      }
-      &__progression {
-        animation: apparition-progressive 1500ms 250ms;
-      }
-      &__progressionfinal {
-        animation: apparition-progressive 1500ms 350ms;
-      }
-      &__progressionfinalite {
-        animation: apparition-progressive 1500ms 450ms;
+      &__progressive {
+        animation: apparition-progressive $anim-dur;
+        @for $i from 1 through $num-progres {
+          &--#{$i} {
+            animation-delay: $anim-delay * $i;
+          }
+        }
       }
       &__ajouter {
         width: 50px;
@@ -102,7 +98,7 @@
       }
       h4 {
         font-size: 12px;
-        margin-left: 20px;
+        margin-left: 10px;
         font-weight: 500;
       } 
       &__position {
@@ -117,7 +113,7 @@
       h5 {
         font-size: 11px;
         font-weight: 100;
-        margin-left: 20px;
+        margin-left: 10px;
         margin-top: -10px;
       }
       
