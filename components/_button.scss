@@ -7,6 +7,15 @@
   border: none;
   position: relative;
   z-index: 1;
+  &--desktop {
+    @include desktop-only {
+      position: absolute;
+      margin-top: 570px;
+    }
+  }
+  @include desktop-only {
+    transform: scale(1.15);
+  }
   &:hover {
     @include hover-shadow;
     &::after {
