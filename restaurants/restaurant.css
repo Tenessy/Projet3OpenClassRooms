@@ -153,6 +153,18 @@ a {
   position: relative;
   z-index: 1;
 }
+@media screen and (min-width: 1024px) {
+  .explore--desktop {
+    position: absolute;
+    margin-top: 570px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .explore {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
 .explore:hover {
   -webkit-box-shadow: 15px 15px 25px 15px #d9d9d9;
           box-shadow: 15px 15px 25px 15px #d9d9d9;
@@ -193,26 +205,69 @@ header .fa-arrow-left {
 }
 
 .basdepage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 0;
   width: 100%;
   background-color: #323333;
   padding-bottom: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .basdepage {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .basdepage__lien {
   margin-left: 40px;
   padding-top: 10px;
   color: white;
 }
+@media screen and (min-width: 1024px) {
+  .basdepage__lien {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: -350px;
+  }
+}
 .basdepage__lien h3 {
   color: white;
   font-size: 16px;
   margin-left: -20px;
 }
+@media screen and (min-width: 1024px) {
+  .basdepage__lien h3 {
+    margin-left: 20px;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 420px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .basdepage__lien .fa-hands-helping {
+    margin-left: 315px;
+  }
+}
 .basdepage__lien__fafood {
   margin-top: 0;
-  margin-left: -20px;
+  margin-left: -10px;
   position: absolute;
   font-size: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .basdepage__lien__fafood {
+    position: absolute;
+    margin-left: 75px;
+    margin-top: 50px;
+    font-size: 16px;
+  }
 }
 .basdepage__lien h4 {
   font-weight: 500;
@@ -221,12 +276,26 @@ header .fa-arrow-left {
   font-size: 13px;
   margin-left: 0;
 }
+@media screen and (min-width: 1024px) {
+  .basdepage__lien h4 {
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 14px;
+  }
+}
 .basdepage__lien h5 {
   font-weight: 400;
   color: white;
   margin-top: 0;
   font-size: 13px;
   margin-left: -20px;
+}
+@media screen and (min-width: 1024px) {
+  .basdepage__lien h5 {
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 14px;
+  }
 }
 
 .nomresto {
@@ -248,26 +317,102 @@ header .fa-arrow-left {
   border-radius: 25px 25px 0px 0px;
   background-color: #f2f2f2;
 }
+@media screen and (min-width: 1024px) {
+  .nomresto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+    position: relative;
+    padding-bottom: 250px;
+    margin-top: -250px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nomresto section {
+    margin-top: 90px;
+    margin-left: 80px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .nomresto section section > .nomresto__carte {
+    margin-top: 50px;
+  }
+}
 .nomresto__france {
   margin-left: -170px;
+}
+@media screen and (min-width: 1024px) {
+  .nomresto__france {
+    position: absolute;
+    margin-top: -220px;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
 }
 .nomresto__palette {
   margin-left: -120px;
 }
+@media screen and (min-width: 1024px) {
+  .nomresto__palette {
+    position: absolute;
+    margin-top: -220px;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
 .nomresto__delice {
   margin-left: -130px;
+}
+@media screen and (min-width: 1024px) {
+  .nomresto__delice {
+    position: absolute;
+    margin-top: -220px;
+  }
 }
 .nomresto__note {
   margin-left: -110px;
 }
+@media screen and (min-width: 1024px) {
+  .nomresto__note {
+    position: absolute;
+    margin-top: -250px;
+  }
+}
 .nomresto__entre {
   margin-left: -290px;
+}
+@media screen and (min-width: 1024px) {
+  .nomresto__entre {
+    margin-left: 10px;
+  }
 }
 .nomresto__plat {
   margin-left: -305px;
 }
+@media screen and (min-width: 1024px) {
+  .nomresto__plat {
+    margin-left: 10px;
+  }
+}
 .nomresto__dessert {
   margin-left: -285px;
+}
+@media screen and (min-width: 1024px) {
+  .nomresto__dessert {
+    margin-left: 10px;
+  }
 }
 .nomresto__bordinferieur {
   border-bottom: 2px solid #99E2D0;
@@ -275,11 +420,25 @@ header .fa-arrow-left {
   margin-top: -5px;
   margin-left: -300px;
 }
+@media screen and (min-width: 1024px) {
+  .nomresto__bordinferieur {
+    margin-left: 10px;
+  }
+}
 .nomresto__heart {
   font-weight: 100;
   margin-left: 240px;
   margin-top: -50px;
   font-size: 22px;
+}
+@media screen and (min-width: 1024px) {
+  .nomresto__heart {
+    position: absolute;
+    margin-top: -230px;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    margin-left: 100px;
+  }
 }
 .nomresto h3 {
   font-size: 12px;
@@ -329,6 +488,15 @@ header .fa-arrow-left {
           animation-delay: 600ms;
 }
 .nomresto__carte__ajouter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 50px;
   height: 61px;
   border-radius: 0px 15px 15px 0px;
@@ -345,8 +513,6 @@ header .fa-arrow-left {
   transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }
 .nomresto__carte__ajouter__validate {
-  margin-top: 20px;
-  margin-left: 15px;
   color: white;
 }
 .nomresto__carte__ajouter__validate--rotation {
@@ -382,18 +548,34 @@ header .fa-arrow-left {
   margin-top: -10px;
 }
 
+.resto-img {
+  margin-left: auto;
+  margin-right: auto;
+}
 .resto-img img {
+  aspect-ratio: 3/2;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
-  height: 350px;
 }
 
 .basdepage {
   position: absolute;
   margin-top: 930px;
 }
+@media screen and (min-width: 1024px) {
+  .basdepage {
+    margin-top: 80px;
+  }
+}
 
 .position__basdepage {
   margin-top: 1000px;
+}
+@media screen and (min-width: 1024px) {
+  .position__basdepage {
+    margin-top: 60px;
+  }
 }
 
 .nomresto__padding {
