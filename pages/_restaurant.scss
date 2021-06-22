@@ -1,115 +1,158 @@
 .restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  position: relative;
+  padding-bottom: 60px;
+  @include desktop-only {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 70px;
-    position: relative;
-    padding-bottom: 60px;
-    &--grey {
-      background-color: $grisclair;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 80px;
+  }
+  &--grey {
+    background-color: $grisclair;
+  }
+  h2 {
+    margin-left: -200px;
+    padding-top: 60px;
+    @include desktop-only {
+      margin-top: -350px;
+      margin-left: -1250px;
+      position: absolute;
+      transform: scale(1.1);
+     
     }
-    h2 {
-      margin-left: -200px;
-     padding-top: 60px;
+  }
+  &__list {
+    width: 335px;
+    margin-top: 20px;
+    @include radius;
+    height: 250px;
+    box-shadow: 0px 0px 5px 5px $grisclair;
+    @include desktop-only {
+      justify-self: center;
+      margin-left: 25px;
     }
-    &__list {
-       width: 335px;
-       margin-top: 20px;
-       @include radius;
-       height: 250px;
-       box-shadow: 0px 0px 5px 5px $grisclair;
-       &__position {
-         margin-top: 0;
-       }
-       &--fondblanc {
-          background-color: white;
-       }
-        &__nouveau {
-          @include lighten-tertiary;
-          margin-left: 240px;
-          font-size: 14px;
-          position: absolute;
-          margin-top: -160px;
-          width: 80px;
-          height: 30px;
-          &__nom {
-            @include darken-tertiary;
-            font-size: 14px;
-            margin-top: 5px;
-            margin-left: 10px;
-          }
-        }
-       img {
-        height: 175px;
-        width: 335px;
-        border-radius: 15px 15px 0px 0px;
-      }
-      &__nomplat {
-        font-weight: 500;
+   /* &__position {
+      margin-top: 0;
+    }
+    */
+    &--fondblanc {
+      background-color: white;
+    }
+    &__nouveau {
+      @include lighten-tertiary;
+      margin-left: 240px;
+      font-size: 14px;
+      position: absolute;
+      margin-top: -160px;
+      width: 80px;
+      height: 30px;
+      &__nom {
+        @include darken-tertiary;
+        font-size: 14px;
         margin-top: 5px;
-        width: 250px;
         margin-left: 10px;
-    
       }
-      h4 {
-        font-weight: 300;
-        margin-top: -15px;
-        margin-left: 10px;
-        width: 150px;
-        height: 0;
-      }
-        a {
-          overflow:hidden;
-          width: 25px;
-          height: 25px;
-          position: relative;
-        }
-        &__depassement {
-          width: 27px; 
-          height: 26px; 
-          background-color: white; 
-          position: absolute;
-          transform: rotate(45deg);
-          border-radius: 30px 25px 5px 25px;
-          margin-left: 270px; 
-          margin-top: -45px; 
-          z-index: 2;
-          overflow: hidden;
-          .fa-heart {
-            margin-top: -40px;
-            position: relative;
-            display: block;
-            color: black;
-            transform: rotate(-45deg);
-            left: 5px;
-            right: 0;
-            bottom: 0;
-            font-size: 26px;
-            top: 44px;
-            position: relative;
-            z-index: 1;
-            &:hover {
-              &::after {
-                transform: translateY(-20.8px);
-                cursor: pointer;
-              }
-            }
-            &::after {
-              content: "";
-              position: absolute;
-              border-radius: 75%/8%;
-              background: $lineargradient;
-              transition: transform 3s ease-in-out;
-              top: 25px;
-              left: 2px;
-              right: 0;
-              bottom: 0;
-              height: 22px;
-              width: 22px;
-              z-index: -1;
-            } 
-          }
-        }   
     }
+    img {
+     //aspect-ratio: 3/2;
+    // object-position: center;
+      //width: 335px;
+      width: 100%;
+      height: 175px;
+      object-fit: cover;
+      aspect-ratio: 3/2;
+      object-position: center;
+      border-radius: 15px 15px 0px 0px;
+    }
+    &__nomplat {
+      font-weight: 500;
+      margin-top: 5px;
+      width: 250px;
+      margin-left: 10px;
+      position: absolute;
+    }
+    h4 {
+      font-weight: 300;
+      margin-top: 25px;
+      margin-left: 10px;
+      width: 150px;
+      height: 0;
+    }
+    &__depassement {
+      width: 26.5px; 
+      height: 26.5px; 
+      background-color: white; 
+      padding-bottom: 0;
+      position: absolute;
+      transform: rotate(45deg);
+      border-radius: 30px 28px 8px 20px;
+      margin-left: 270px; 
+      margin-top: -45px; 
+      z-index: 2;
+      overflow: hidden;
+      .fa-heart {
+        margin-top: -40px;
+        position: relative;
+        display: block;
+        color: black;
+        transform: rotate(-45deg);
+        left: 5px;
+        right: 0;
+        bottom: 0;
+        font-size: 26px;
+        top: 45px;
+        z-index: 1;
+        &:hover{
+          &::before {
+            background: linear-gradient(to right top, $color-secondary 10%, $color-primary);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: initial; 
+          }
+        }
+        &::before {
+          background-color: black;
+        //  background: -webkit-gradient(linear, left top, left bottom, from($color-secondary), to($color-primary));//(linear, left top, left bottom, from(#f00), to(#333));
+          color: transparent;
+          content: "\f004";
+          //transition: 3s background-position ease-in-out;
+          //background-size: 200%;
+           background-clip: text;
+           -webkit-text-fill-color: transparent;
+           display: initial; 
+         /* reset Font Awesome's display:inline-block */
+        
+        // transition: color 3s ease-in-out;
+        }
+        &:hover {
+          &::after {
+            transform: translateY(-21.2px);
+            cursor: pointer;
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          border-radius: 3px 5px 5px 10px;
+          background: linear-gradient(to right top, $color-secondary 10%, $color-primary);
+          transition: transform 3s cubic-bezier(.13,.48,.55,.26);
+          top: 25px;
+          left: 1px;
+          right: 0;
+          bottom: 0;
+          height: 25px;
+          width: 25px;
+          z-index: -1;
+        } 
+      }
+    }   
+  }
 }  
   

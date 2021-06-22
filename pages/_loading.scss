@@ -5,37 +5,37 @@ $anim-dur: 1000ms;
 $contain-dur: 3000ms;
 $anim-delay: $anim-dur / $num-bars;
 body {
-    animation: cache 500ms;
+  animation: cache 500ms;
 }
 .load {
-    width: $size*20;
-    height: $size*15;
-    display: flex;
-    justify-content: space-evenly;
-    &__bar {
-      background: $lineargradient;
-      height: 100%;
-      width: $size;
-      animation: bars $anim-dur backwards infinite;
-      @for $i from 1 through $num-bars {
-          &--#{$i} {
-            animation-delay: $anim-delay * $i;
-          }
-       }      
-    }    
+  width: $size*20;
+  height: $size*15;
+  display: flex;
+  justify-content: space-evenly;
+  &__bar {
+    background: $lineargradient;
+    height: 100%;
+    width: $size;
+    animation: bars $anim-dur backwards infinite;
+    @for $i from 1 through $num-bars {
+      &--#{$i} {
+        animation-delay: $anim-delay * $i;
+      }
+    }      
+  }    
 }
 .container {
-   opacity: 0;
-   transition: opacity 2000ms;
-   position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   animation: fond $contain-dur;
+  opacity: 0;
+  transition: opacity 2000ms;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fond $contain-dur;
 }
 
 
