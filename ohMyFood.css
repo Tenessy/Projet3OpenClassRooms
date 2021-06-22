@@ -157,26 +157,69 @@ header .fa-arrow-left {
 }
 
 .basdepage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 0;
   width: 100%;
   background-color: #323333;
   padding-bottom: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .basdepage {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .basdepage__lien {
   margin-left: 40px;
   padding-top: 10px;
   color: white;
 }
+@media screen and (min-width: 1024px) {
+  .basdepage__lien {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: -350px;
+  }
+}
 .basdepage__lien h3 {
   color: white;
   font-size: 16px;
   margin-left: -20px;
 }
+@media screen and (min-width: 1024px) {
+  .basdepage__lien h3 {
+    margin-left: 20px;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 420px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .basdepage__lien .fa-hands-helping {
+    margin-left: 315px;
+  }
+}
 .basdepage__lien__fafood {
   margin-top: 0;
-  margin-left: -20px;
+  margin-left: -10px;
   position: absolute;
   font-size: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .basdepage__lien__fafood {
+    position: absolute;
+    margin-left: 75px;
+    margin-top: 50px;
+    font-size: 16px;
+  }
 }
 .basdepage__lien h4 {
   font-weight: 500;
@@ -185,12 +228,26 @@ header .fa-arrow-left {
   font-size: 13px;
   margin-left: 0;
 }
+@media screen and (min-width: 1024px) {
+  .basdepage__lien h4 {
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 14px;
+  }
+}
 .basdepage__lien h5 {
   font-weight: 400;
   color: white;
   margin-top: 0;
   font-size: 13px;
   margin-left: -20px;
+}
+@media screen and (min-width: 1024px) {
+  .basdepage__lien h5 {
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 14px;
+  }
 }
 
 .fonction {
@@ -206,8 +263,32 @@ header .fa-arrow-left {
           align-items: center;
   margin-top: 50px;
 }
+@media screen and (min-width: 1024px) {
+  .fonction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    margin-left: -260px;
+  }
+}
 .fonction h2 {
   margin-left: -150px;
+}
+@media screen and (min-width: 1024px) {
+  .fonction h2 {
+    position: absolute;
+    margin-top: -90px;
+    margin-left: -850px;
+  }
 }
 .fonction__fonctionnalité {
   width: 330px;
@@ -216,6 +297,12 @@ header .fa-arrow-left {
   border-radius: 25px 25px 25px 25px;
   -webkit-box-shadow: 5px 5px 5px 5px #d9d9d9;
           box-shadow: 5px 5px 5px 5px #d9d9d9;
+}
+@media screen and (min-width: 1024px) {
+  .fonction__fonctionnalité {
+    margin-left: 90px;
+    margin-top: 70px;
+  }
 }
 .fonction__fonctionnalité--clair {
   background: #f4ebff;
@@ -258,6 +345,18 @@ header .fa-arrow-left {
   border: none;
   position: relative;
   z-index: 1;
+}
+@media screen and (min-width: 1024px) {
+  .explore--desktop {
+    position: absolute;
+    margin-top: 570px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .explore {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
 }
 .explore:hover {
   -webkit-box-shadow: 15px 15px 25px 15px #d9d9d9;
@@ -408,12 +507,40 @@ body {
   position: relative;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1024px) {
+  .restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 80px;
+  }
+}
 .restaurant--grey {
   background-color: #f2f2f2;
 }
 .restaurant h2 {
   margin-left: -200px;
   padding-top: 60px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant h2 {
+    margin-top: -350px;
+    margin-left: -1250px;
+    position: absolute;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 .restaurant__list {
   width: 335px;
@@ -422,9 +549,16 @@ body {
   height: 250px;
   -webkit-box-shadow: 0px 0px 5px 5px #f2f2f2;
           box-shadow: 0px 0px 5px 5px #f2f2f2;
+  /* &__position {
+     margin-top: 0;
+   }
+   */
 }
-.restaurant__list__position {
-  margin-top: 0;
+@media screen and (min-width: 1024px) {
+  .restaurant__list {
+    justify-self: center;
+    margin-left: 25px;
+  }
 }
 .restaurant__list--fondblanc {
   background-color: white;
@@ -446,8 +580,13 @@ body {
   margin-left: 10px;
 }
 .restaurant__list img {
+  width: 100%;
   height: 175px;
-  width: 335px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 3/2;
+  -o-object-position: center;
+     object-position: center;
   border-radius: 15px 15px 0px 0px;
 }
 .restaurant__list__nomplat {
@@ -455,28 +594,24 @@ body {
   margin-top: 5px;
   width: 250px;
   margin-left: 10px;
+  position: absolute;
 }
 .restaurant__list h4 {
   font-weight: 300;
-  margin-top: -15px;
+  margin-top: 25px;
   margin-left: 10px;
   width: 150px;
   height: 0;
 }
-.restaurant__list a {
-  overflow: hidden;
-  width: 25px;
-  height: 25px;
-  position: relative;
-}
 .restaurant__list__depassement {
-  width: 27px;
-  height: 26px;
+  width: 26.5px;
+  height: 26.5px;
   background-color: white;
+  padding-bottom: 0;
   position: absolute;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  border-radius: 30px 25px 5px 25px;
+  border-radius: 30px 28px 8px 20px;
   margin-left: 270px;
   margin-top: -45px;
   z-index: 2;
@@ -493,30 +628,47 @@ body {
   right: 0;
   bottom: 0;
   font-size: 26px;
-  top: 44px;
-  position: relative;
+  top: 45px;
   z-index: 1;
 }
+.restaurant__list__depassement .fa-heart:hover::before {
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, #FF79DA), to(#9356DC));
+  background: linear-gradient(to right top, #FF79DA 10%, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: initial;
+}
+.restaurant__list__depassement .fa-heart::before {
+  background-color: black;
+  color: transparent;
+  content: "";
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: initial;
+  /* reset Font Awesome's display:inline-block */
+}
 .restaurant__list__depassement .fa-heart:hover::after {
-  -webkit-transform: translateY(-20.8px);
-          transform: translateY(-20.8px);
+  -webkit-transform: translateY(-21.2px);
+          transform: translateY(-21.2px);
   cursor: pointer;
 }
 .restaurant__list__depassement .fa-heart::after {
   content: "";
   position: absolute;
-  border-radius: 75%/8%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA 10%, #9356DC);
-  -webkit-transition: -webkit-transform 3s ease-in-out;
-  transition: -webkit-transform 3s ease-in-out;
-  transition: transform 3s ease-in-out;
-  transition: transform 3s ease-in-out, -webkit-transform 3s ease-in-out;
+  border-radius: 3px 5px 5px 10px;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, #FF79DA), to(#9356DC));
+  background: linear-gradient(to right top, #FF79DA 10%, #9356DC);
+  -webkit-transition: -webkit-transform 3s cubic-bezier(0.13, 0.48, 0.55, 0.26);
+  transition: -webkit-transform 3s cubic-bezier(0.13, 0.48, 0.55, 0.26);
+  transition: transform 3s cubic-bezier(0.13, 0.48, 0.55, 0.26);
+  transition: transform 3s cubic-bezier(0.13, 0.48, 0.55, 0.26), -webkit-transform 3s cubic-bezier(0.13, 0.48, 0.55, 0.26);
   top: 25px;
-  left: 2px;
+  left: 1px;
   right: 0;
   bottom: 0;
-  height: 22px;
-  width: 22px;
+  height: 25px;
+  width: 25px;
   z-index: -1;
 }/*# sourceMappingURL=ohMyFood.css.map */
