@@ -9,40 +9,95 @@
     margin-top: -80px;
     border-radius: 25px 25px 0px 0px;
     background-color: #f2f2f2;
+    @include desktop-only {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border-radius: 25px 25px 0px 0px;
+      position: relative;    
+      padding-bottom: 250px;
+      margin-top: -250px;
+    }
+    section {
+      @include desktop-only {
+        margin-top: 90px;
+        margin-left: 80px;
+        transform: scale(1.10);
+        section >.nomresto__carte {
+          margin-top: 50px;
+        }
+      } 
+    }
     &__france {
       margin-left: -170px;
+      @include desktop-only {
+        position: absolute;
+        margin-top: -220px;
+        transform: scale(1.15);
+      }
     }
     &__palette {
       margin-left: -120px;
+      @include desktop-only {
+        position: absolute;
+        margin-top: -220px;
+        transform: scale(1.15);
+      }
     }
     &__delice {
       margin-left: -130px;
+      @include desktop-only {
+        position: absolute;
+        margin-top: -220px;
+      }
     }
     &__note {
       margin-left: -110px;
+      @include desktop-only {
+        position: absolute;
+        margin-top: -250px;
+      }
     }
     &__entre {
-      margin-left: -290px;
-    
+      margin-left: -290px; 
+      @include desktop-only {
+        margin-left: 10px;
+      }
     }
     &__plat {
       margin-left: -305px;
+      @include desktop-only {
+        margin-left: 10px;
+      }
     }
     &__dessert {
       margin-left: -285px;
+      @include desktop-only {
+        margin-left: 10px;
+      }
     }
    &__bordinferieur {
     border-bottom: 2px solid #99E2D0;
     width: 40px;
     margin-top: -5px;
     margin-left: -300px;
+    @include desktop-only {
+      margin-left: 10px;
+    }
    }
    &__heart {
      font-weight: 100;
      margin-left: 240px;
      margin-top: -50px;
      font-size: 22px;
-  
+     @include desktop-only {
+       position: absolute;
+       margin-top: -230px;
+       transform: scale(1.15);
+       margin-left: 100px;
+     }
    }
    h3 {
     font-size: 12px;
@@ -75,6 +130,9 @@
         }
       }
       &__ajouter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 50px;
         height: 61px;
         border-radius: 0px 15px 15px 0px;
@@ -87,8 +145,6 @@
           @include transform;
         }  
         &__validate {
-          margin-top: 20px;
-          margin-left: 15px;
           color: white;
           &--rotation {
             transform: rotate(1turn);

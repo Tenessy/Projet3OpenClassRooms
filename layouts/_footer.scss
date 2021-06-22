@@ -1,40 +1,73 @@
 .basdepage {
-    margin-top: 0;
-    width: 100%;
-    background-color: #323333;
-    padding-bottom: 30px;
-    
-    &__lien {
-        margin-left: 40px;
-        padding-top: 10px;
-        color: white;
-      
-      h3{
-        color: white;
-        font-size: 16px;
-       
-        margin-left: -20px;
-      }
-      &__fafood {
-        margin-top: 0;
-        margin-left: -20px;
+  display: flex;
+  margin-top: 0;
+  width: 100%;
+  background-color: #323333;
+  padding-bottom: 30px;
+  @include desktop-only {
+    justify-content: center;
+  }
+  &__lien {
+    margin-left: 40px;
+    padding-top: 10px;
+    color: white;
+    @include desktop-only {
+      display: flex;
+      flex-direction: row;
+      margin-left: -350px;
+   
+    }
+    h3{
+      color: white;
+      font-size: 16px;
+      margin-left: -20px;
+      @include desktop-only {
+        margin-left: 20px;
         position: absolute;
-        font-size: 10px;
-      }
-      
-      h4 {
-        font-weight: 500;
-        margin-top: -2px;
-        color: white;
-        font-size: 13px;
-        margin-left: 0;
-      }
-      h5 {
-        font-weight: 400;
-        color: white;
         margin-top: 0;
-        font-size: 13px;
-        margin-left: -20px;
+        margin-left: 420px; 
       }
     }
+    .fa-hands-helping {
+      @include desktop-only {
+        margin-left: 315px;
+      }
+    }
+    &__fafood {
+      margin-top: 0;
+      margin-left: -10px;
+      position: absolute;
+      font-size: 10px;
+      @include desktop-only {
+        position: absolute;
+        margin-left: 75px;
+        margin-top: 50px;
+        font-size: 16px;
+      }
+    }
+    h4 {
+      font-weight: 500;
+      margin-top: -2px;
+      color: white;
+      font-size: 13px;
+      margin-left: 0;
+      @include desktop-only {
+        margin-left: 100px;
+        margin-top: 50px;
+        font-size: 14px;
+      }
+    }
+    h5 {
+      font-weight: 400;
+      color: white;
+      margin-top: 0;
+      font-size: 13px;
+      margin-left: -20px;
+      @include desktop-only {
+        margin-left: 100px;
+        margin-top: 50px;
+        font-size: 14px;
+      }
+    }
+  }
 }
