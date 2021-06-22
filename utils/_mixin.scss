@@ -29,3 +29,13 @@
 @mixin lighten-gradient ($color: $color-secondary , $color2: $color-primary) {
   background: linear-gradient(lighten($color, 5%) 10%, lighten($color2, 5%));
 }
+@mixin desktop-only {
+  @media screen and (min-width: map-get($breakpoints, desktop)){ 
+    @content; 
+  }
+}
+@mixin tablette-only {
+  @media screen and (min-width: map-get($breakpoints, tablette)) {
+    @content;
+  }
+}
