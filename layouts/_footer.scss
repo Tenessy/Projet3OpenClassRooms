@@ -6,6 +6,12 @@
   padding-bottom: 30px;
   @include desktop-only {
     justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  @include laptop-only {
+    margin-top: 0;
+    padding-bottom: 0;
   }
   &__lien {
     margin-left: 40px;
@@ -14,8 +20,13 @@
     @include desktop-only {
       display: flex;
       flex-direction: row;
-      margin-left: -350px;
-   
+      margin-left: -350px
+    }
+    @include laptop-only {
+      display: flex;
+      flex-direction: row;
+    //  margin-left: -350px;
+      align-items: center;
     }
     h3{
       color: white;
@@ -25,12 +36,22 @@
         margin-left: 20px;
         position: absolute;
         margin-top: 0;
+       margin-left: 420px; 
+      }
+      @include laptop-only {
+        margin-left: 20px;
+        position: absolute;
+        margin-top: -30px;
         margin-left: 420px; 
       }
     }
     .fa-hands-helping {
       @include desktop-only {
         margin-left: 315px;
+      }
+      @include laptop-only {
+        margin-left: 300px;
+        font-size: 12px;
       }
     }
     &__fafood {
@@ -44,6 +65,12 @@
         margin-top: 50px;
         font-size: 16px;
       }
+      @include laptop-only {
+        position: absolute;
+        margin-left: 80px;
+        margin-top: 35px;
+        font-size: 12px;
+      }
     }
     h4 {
       font-weight: 500;
@@ -56,6 +83,11 @@
         margin-top: 50px;
         font-size: 14px;
       }
+      @include laptop-only {
+        margin-left: 100px;
+        margin-top: 50px;
+        font-size: 12px;
+      }
     }
     h5 {
       font-weight: 400;
@@ -67,6 +99,11 @@
         margin-left: 100px;
         margin-top: 50px;
         font-size: 14px;
+      }
+      @include laptop-only {
+        margin-left: 100px;
+        margin-top: 50px;
+        font-size: 12px;
       }
     }
   }
