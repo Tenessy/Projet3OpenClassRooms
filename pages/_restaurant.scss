@@ -16,7 +16,10 @@
   }
   @include laptop-only {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   &--grey {
     background-color: $grisclair;
@@ -29,7 +32,11 @@
       margin-left: -1250px;
       position: absolute;
       transform: scale(1.1);
-     
+    }
+    @include laptop-only {
+      position: absolute;
+      margin-top: -630px;
+      margin-left: -540px;
     }
   }
   &__list {
@@ -41,6 +48,11 @@
     @include desktop-only {
       justify-self: center;
       margin-left: 25px;
+    }
+    @include laptop-only {
+      margin-top: 100px;
+      margin-left: 60px;
+      width: 400px;
     }
    /* &__position {
       margin-top: 0;
