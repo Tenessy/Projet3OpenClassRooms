@@ -165,11 +165,21 @@ header .fa-arrow-left {
   background-color: #323333;
   padding-bottom: 30px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .basdepage {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .basdepage {
+    margin-top: 0;
+    padding-bottom: 0;
   }
 }
 .basdepage__lien {
@@ -177,7 +187,7 @@ header .fa-arrow-left {
   padding-top: 10px;
   color: white;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .basdepage__lien {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -189,12 +199,26 @@ header .fa-arrow-left {
     margin-left: -350px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .basdepage__lien {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .basdepage__lien h3 {
   color: white;
   font-size: 16px;
   margin-left: -20px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .basdepage__lien h3 {
     margin-left: 20px;
     position: absolute;
@@ -202,9 +226,23 @@ header .fa-arrow-left {
     margin-left: 420px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .basdepage__lien h3 {
+    margin-left: 20px;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 420px;
+  }
+}
+@media screen and (min-width: 1440px) {
   .basdepage__lien .fa-hands-helping {
     margin-left: 315px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .basdepage__lien .fa-hands-helping {
+    margin-left: 300px;
+    font-size: 12px;
   }
 }
 .basdepage__lien__fafood {
@@ -213,12 +251,20 @@ header .fa-arrow-left {
   position: absolute;
   font-size: 10px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .basdepage__lien__fafood {
     position: absolute;
     margin-left: 75px;
     margin-top: 50px;
     font-size: 16px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .basdepage__lien__fafood {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 35px;
+    font-size: 12px;
   }
 }
 .basdepage__lien h4 {
@@ -228,11 +274,18 @@ header .fa-arrow-left {
   font-size: 13px;
   margin-left: 0;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .basdepage__lien h4 {
     margin-left: 100px;
     margin-top: 50px;
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .basdepage__lien h4 {
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 12px;
   }
 }
 .basdepage__lien h5 {
@@ -242,11 +295,18 @@ header .fa-arrow-left {
   font-size: 13px;
   margin-left: -20px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .basdepage__lien h5 {
     margin-left: 100px;
     margin-top: 50px;
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .basdepage__lien h5 {
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 12px;
   }
 }
 
@@ -263,7 +323,7 @@ header .fa-arrow-left {
           align-items: center;
   margin-top: 50px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .fonction {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -283,7 +343,7 @@ header .fa-arrow-left {
 .fonction h2 {
   margin-left: -150px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .fonction h2 {
     position: absolute;
     margin-top: -90px;
@@ -298,7 +358,7 @@ header .fa-arrow-left {
   -webkit-box-shadow: 5px 5px 5px 5px #d9d9d9;
           box-shadow: 5px 5px 5px 5px #d9d9d9;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .fonction__fonctionnalité {
     margin-left: 90px;
     margin-top: 70px;
@@ -346,13 +406,19 @@ header .fa-arrow-left {
   position: relative;
   z-index: 1;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .explore--desktop {
     position: absolute;
     margin-top: 570px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .explore--desktop {
+    position: absolute;
+    margin-top: 500px;
+  }
+}
+@media screen and (min-width: 1440px) {
   .explore {
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
@@ -507,7 +573,7 @@ body {
   position: relative;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .restaurant {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -526,6 +592,15 @@ body {
     padding-bottom: 80px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .restaurant--grey {
   background-color: #f2f2f2;
 }
@@ -533,7 +608,7 @@ body {
   margin-left: -200px;
   padding-top: 60px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .restaurant h2 {
     margin-top: -350px;
     margin-left: -1250px;
@@ -554,7 +629,7 @@ body {
    }
    */
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .restaurant__list {
     justify-self: center;
     margin-left: 25px;
