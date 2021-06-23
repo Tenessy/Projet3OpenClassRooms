@@ -12,6 +12,10 @@
       position: absolute;
       margin-top: 570px;
     }
+    @include laptop-only {
+      position: absolute;
+      margin-top: 500px;
+    }
   }
   @include desktop-only {
     transform: scale(1.15);
