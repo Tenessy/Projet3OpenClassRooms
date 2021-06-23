@@ -10,20 +10,33 @@
 
 
 .resto-img {
-
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+   @include laptop-only {
+      @include radius;
+   }
+    
     img {
       aspect-ratio: 3/2;   
       object-fit: cover;
-       width: 100%;
-    }        
+      width: 100%;
+       @include laptop-only {
+           width: 95%;
+           object-position: center;
+           object-fit: cover;
+           @include radius;
+           aspect-ratio: 3/2;  
+        }
+    }   
 }
 .basdepage {
     position: absolute;
     margin-top: 930px;
+    @include laptop-only {
+        margin-top: 0;
+    }
     @include desktop-only {
-      margin-top: 80px;
+        margin-top: 0;
     }
 }
 .position__basdepage {

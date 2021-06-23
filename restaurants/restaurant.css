@@ -153,13 +153,19 @@ a {
   position: relative;
   z-index: 1;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .explore--desktop {
     position: absolute;
     margin-top: 570px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .explore--desktop {
+    position: absolute;
+    margin-top: 500px;
+  }
+}
+@media screen and (min-width: 1440px) {
   .explore {
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
@@ -213,11 +219,21 @@ header .fa-arrow-left {
   background-color: #323333;
   padding-bottom: 30px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .basdepage {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .basdepage {
+    margin-top: 0;
+    padding-bottom: 0;
   }
 }
 .basdepage__lien {
@@ -225,7 +241,7 @@ header .fa-arrow-left {
   padding-top: 10px;
   color: white;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .basdepage__lien {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -237,12 +253,26 @@ header .fa-arrow-left {
     margin-left: -350px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .basdepage__lien {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .basdepage__lien h3 {
   color: white;
   font-size: 16px;
   margin-left: -20px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .basdepage__lien h3 {
     margin-left: 20px;
     position: absolute;
@@ -250,9 +280,23 @@ header .fa-arrow-left {
     margin-left: 420px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .basdepage__lien h3 {
+    margin-left: 20px;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 420px;
+  }
+}
+@media screen and (min-width: 1440px) {
   .basdepage__lien .fa-hands-helping {
     margin-left: 315px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .basdepage__lien .fa-hands-helping {
+    margin-left: 300px;
+    font-size: 12px;
   }
 }
 .basdepage__lien__fafood {
@@ -261,12 +305,20 @@ header .fa-arrow-left {
   position: absolute;
   font-size: 10px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .basdepage__lien__fafood {
     position: absolute;
     margin-left: 75px;
     margin-top: 50px;
     font-size: 16px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .basdepage__lien__fafood {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 35px;
+    font-size: 12px;
   }
 }
 .basdepage__lien h4 {
@@ -276,11 +328,18 @@ header .fa-arrow-left {
   font-size: 13px;
   margin-left: 0;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .basdepage__lien h4 {
     margin-left: 100px;
     margin-top: 50px;
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .basdepage__lien h4 {
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 12px;
   }
 }
 .basdepage__lien h5 {
@@ -290,11 +349,18 @@ header .fa-arrow-left {
   font-size: 13px;
   margin-left: -20px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .basdepage__lien h5 {
     margin-left: 100px;
     margin-top: 50px;
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .basdepage__lien h5 {
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 12px;
   }
 }
 
@@ -317,7 +383,7 @@ header .fa-arrow-left {
   border-radius: 25px 25px 0px 0px;
   background-color: #f2f2f2;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .nomresto {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -336,10 +402,33 @@ header .fa-arrow-left {
     border-radius: 25px 25px 0px 0px;
     position: relative;
     padding-bottom: 250px;
-    margin-top: -250px;
+    margin-top: -450px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .nomresto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: relative;
+    margin-top: -350px;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1440px) {
   .nomresto section {
     margin-top: 90px;
     margin-left: 80px;
@@ -350,21 +439,35 @@ header .fa-arrow-left {
     margin-top: 50px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .nomresto section {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    margin-left: 0;
+    margin-top: 80px;
+  }
+}
 .nomresto__france {
   margin-left: -170px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .nomresto__france {
     position: absolute;
-    margin-top: -220px;
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+    margin-top: -230px;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .nomresto__france {
+    position: absolute;
+    margin-top: -230px;
+    margin-left: 0;
   }
 }
 .nomresto__palette {
   margin-left: -120px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .nomresto__palette {
     position: absolute;
     margin-top: -220px;
@@ -372,28 +475,56 @@ header .fa-arrow-left {
             transform: scale(1.15);
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .nomresto__palette {
+    position: absolute;
+    margin-top: -230px;
+    margin-left: 0;
+  }
+}
 .nomresto__delice {
   margin-left: -130px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .nomresto__delice {
     position: absolute;
-    margin-top: -220px;
+    margin-top: -230px;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .nomresto__delice {
+    position: absolute;
+    margin-top: -230px;
+    margin-left: 0;
   }
 }
 .nomresto__note {
   margin-left: -110px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .nomresto__note {
     position: absolute;
-    margin-top: -250px;
+    margin-top: -230px;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .nomresto__note {
+    position: absolute;
+    margin-top: -230px;
+    margin-left: 0;
   }
 }
 .nomresto__entre {
   margin-left: -290px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
+  .nomresto__entre {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
   .nomresto__entre {
     margin-left: 10px;
   }
@@ -401,7 +532,12 @@ header .fa-arrow-left {
 .nomresto__plat {
   margin-left: -305px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
+  .nomresto__plat {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
   .nomresto__plat {
     margin-left: 10px;
   }
@@ -409,7 +545,12 @@ header .fa-arrow-left {
 .nomresto__dessert {
   margin-left: -285px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
+  .nomresto__dessert {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
   .nomresto__dessert {
     margin-left: 10px;
   }
@@ -420,7 +561,12 @@ header .fa-arrow-left {
   margin-top: -5px;
   margin-left: -300px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
+  .nomresto__bordinferieur {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
   .nomresto__bordinferieur {
     margin-left: 10px;
   }
@@ -431,7 +577,7 @@ header .fa-arrow-left {
   margin-top: -50px;
   font-size: 22px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .nomresto__heart {
     position: absolute;
     margin-top: -230px;
@@ -440,10 +586,22 @@ header .fa-arrow-left {
     margin-left: 100px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .nomresto__heart {
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 260px;
+  }
+}
 .nomresto h3 {
   font-size: 12px;
   font-weight: 100;
   margin-top: 30px;
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .nomresto h3 {
+    font-size: 14px;
+  }
 }
 .nomresto__carte {
   width: 350px;
@@ -503,6 +661,11 @@ header .fa-arrow-left {
   margin-left: 350px;
   margin-top: -68px;
 }
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .nomresto__carte__ajouter {
+    margin-top: -72px;
+  }
+}
 .nomresto__carte__ajouter--color {
   background-color: #99E2D0;
 }
@@ -528,10 +691,21 @@ header .fa-arrow-left {
   margin-left: 10px;
   font-weight: 500;
 }
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .nomresto__carte h4 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
 .nomresto__carte__position {
   position: absolute;
   margin-top: -10px;
   padding-left: 290px;
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .nomresto__carte__position {
+    margin-top: -10px !important;
+  }
 }
 .nomresto__carte__position--trans {
   -webkit-transform: translateX(0);
@@ -547,10 +721,24 @@ header .fa-arrow-left {
   margin-left: 10px;
   margin-top: -10px;
 }
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .nomresto__carte h5 {
+    font-size: 13px;
+  }
+}
 
 .resto-img {
-  margin-left: auto;
-  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .resto-img {
+    border-radius: 25px 25px 25px 25px;
+  }
 }
 .resto-img img {
   aspect-ratio: 3/2;
@@ -558,21 +746,37 @@ header .fa-arrow-left {
      object-fit: cover;
   width: 100%;
 }
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .resto-img img {
+    width: 95%;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 25px 25px 25px 25px;
+    aspect-ratio: 3/2;
+  }
+}
 
 .basdepage {
   position: absolute;
   margin-top: 930px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
   .basdepage {
-    margin-top: 80px;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .basdepage {
+    margin-top: 0;
   }
 }
 
 .position__basdepage {
   margin-top: 1000px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .position__basdepage {
     margin-top: 60px;
   }
