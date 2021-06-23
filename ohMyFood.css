@@ -340,6 +340,25 @@ header .fa-arrow-left {
     margin-left: -260px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .fonction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .fonction h2 {
   margin-left: -150px;
 }
@@ -348,6 +367,13 @@ header .fa-arrow-left {
     position: absolute;
     margin-top: -90px;
     margin-left: -850px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .fonction h2 {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -750px;
   }
 }
 .fonction__fonctionnalité {
@@ -362,6 +388,12 @@ header .fa-arrow-left {
   .fonction__fonctionnalité {
     margin-left: 90px;
     margin-top: 70px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .fonction__fonctionnalité {
+    width: 300px;
+    margin-left: 30px;
   }
 }
 .fonction__fonctionnalité--clair {
@@ -597,8 +629,18 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .restaurant--grey {
@@ -617,6 +659,13 @@ body {
             transform: scale(1.1);
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .restaurant h2 {
+    position: absolute;
+    margin-top: -630px;
+    margin-left: -540px;
+  }
+}
 .restaurant__list {
   width: 335px;
   margin-top: 20px;
@@ -633,6 +682,13 @@ body {
   .restaurant__list {
     justify-self: center;
     margin-left: 25px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .restaurant__list {
+    margin-top: 100px;
+    margin-left: 60px;
+    width: 400px;
   }
 }
 .restaurant__list--fondblanc {
