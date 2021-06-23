@@ -34,8 +34,21 @@
     @content; 
   }
 }
-@mixin tablette-only {
-  @media screen and (min-width: map-get($breakpoints, tablette)) {
+@mixin laptop-only {
+  @media screen and (min-width: map-get($breakpoints, laptop)) 
+   and (max-width: map-get($breakpoints, desktop)) {
     @content;
   }
+}
+@mixin tablette-only {
+  @media screen and (min-width: map-get($breakpoints, tablette)) 
+   and (max-width: map-get($breakpoints, laptop)) {
+    @content;
+  }
+}
+
+@mixin position-tittle {
+  position: absolute;
+  margin-top: -230px;
+  margin-left: 0;
 }

@@ -10,5 +10,6 @@ $anim-delay: $anim-progres / $num-progres;
 $breakpoints: (
   mobile: 599px,
   tablette: 780px,
-  desktop: 1024px
+  laptop: 1024px,
+  desktop: 1440px
 );
