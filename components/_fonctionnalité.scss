@@ -10,6 +10,14 @@
     transform: scale(1.10);
     margin-left: -260px;
   }
+  @include laptop-only {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
   h2 {
     margin-left: -150px;
     @include desktop-only {
@@ -17,6 +25,11 @@
       margin-top: -90px;
      margin-left: -850px;
      
+    }
+    @include laptop-only {
+      position: absolute;
+      margin-top: -100px;
+      margin-left: -750px;
     }
   }
   &__fonctionnalité {
@@ -28,6 +41,10 @@
     @include desktop-only {
       margin-left: 90px;
       margin-top: 70px
+    }
+    @include laptop-only {
+      width: 300px;
+      margin-left: 30px
     }
     &--clair {
       @include lighten-secondary;
