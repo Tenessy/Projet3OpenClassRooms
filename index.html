@@ -10,7 +10,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com"> 
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
       <link rel="stylesheet" href="ohMyFood.css">
-      <title>ohMyFood</title>
+      <title>ohmyFood</title>
     </head>
 <body>
     <div class="container">
@@ -23,7 +23,7 @@
     </div>
  </div>
     <header>
-      <h1 class="shrikhand">OhMyFood</h1>
+      <h1 class="shrikhand">Ohmyfood</h1>
     </header>
     <div class="localisation">
         <i class="fas fa-map-marker-alt localisation__position"></i>
@@ -39,23 +39,29 @@
       <div class="fonction__fonctionnalité">
         <i class="fas fa-mobile-alt fonction__fonctionnalité__feature"></i>
         <h3 class="roboto">Choisissez un restaurant</h3>
-        <h4 class="roboto fonction__fonctionnalité__cercle">1</h4>
+        <div class="fonction__fonctionnalité__cercle fonction__fonctionnalité__cercle--fond">
+          <h4 class="roboto">1</h4>
+        </div>
       </div>
       <div class="fonction__fonctionnalité">
         <i class="fas fa-list fonction__fonctionnalité__feature"></i>
         <h3 class="roboto">Composer votre menu</h3>
-        <h4 class="roboto fonction__fonctionnalité__cercle">2</h4>
+        <div class="fonction__fonctionnalité__cercle fonction__fonctionnalité__cercle--fond">
+          <h4 class="roboto">2</h4>
+        </div>
       </div>
       <div class="fonction__fonctionnalité fonction__fonctionnalité--clair">
         <i class="fas fa-store fonction__fonctionnalité__feature fonction__fonctionnalité__feature--colori"></i>
         <h3 class="roboto">Dégustez au restaurant</h3>
-        <h4 class="roboto fonction__fonctionnalité__cercle">3</h4>
+        <div class="fonction__fonctionnalité__cercle fonction__fonctionnalité__cercle--fond">
+          <h4 class="roboto">3</h4>
+        </div>
       </div>
     </section>
     <section class="restaurant restaurant--grey">
       <h2 class="roboto">Restaurants</h2>
       <a href="./restaurants/laPalette.html">
-        <div class="restaurant__list restaurant__list__position restaurant__list--fondblanc">
+        <div class="restaurant__list restaurant__list__position restaurant__list--fondblanc restaurant__list--restotop">
           <img src="restaurants/lapalette.jpg" alt="la palette" />
           <div class="restaurant__list__nouveau roboto">
             <h3 class= "restaurant__list__nouveau__nom roboto">Nouveau</h3>
@@ -68,7 +74,7 @@
         </div>
       </a>
       <a href="./restaurants/laNote.html">
-        <div class="restaurant__list restaurant__list--fondblanc">
+        <div class="restaurant__list restaurant__list--fondblanc restaurant__list--restotop">
           <img src="restaurants/lanote.jpg" alt="la note" />
           <div class="restaurant__list__nouveau roboto">
             <h3 class="restaurant__list__nouveau__nom roboto">Nouveau</h3>
@@ -103,9 +109,9 @@
     </section>
     <footer class="basdepage">
       <div class="basdepage__lien">
-        <h3 class="shrikhand">ohMyFood</h3>
+        <h3 class="shrikhand">ohmyfood</h3>
         <i class="fas fa-utensils basdepage__lien__fafood"></i>
-        <a href="#"><h4 class="roboto">Proposer un restaurant</h4></a>
+        <a href="#"><h4 class="roboto basdepage__lien--pos">Proposer un restaurant</h4></a>
         <i class="fas fa-hands-helping basdepage__lien__fafood"></i>
         <a href="#"><h4 class="roboto">Devenir partenaire</h4></a>
         <a href="#"><h5 class="roboto">Mentions légales</h5></a>
