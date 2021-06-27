@@ -10,9 +10,11 @@
     width: 100%;
     padding-top: 90px;
     padding-bottom: 80px;
+  
   }
   @include laptop-only {
     @include resto-disposition;
+    padding-bottom: 120px;
   }
   @include tablette-only {
     @include resto-disposition;
@@ -31,13 +33,13 @@
     }
     @include laptop-only {
       position: absolute;
-      margin-top: -630px;
-      margin-left: -540px;
+      margin-top: -560px;
+      margin-left: -820px;
     }
     @include tablette-only {
       position: absolute;
       margin-top: -560px;
-      margin-left: -620px;
+      margin-left: -600px;
     }
 
 
@@ -49,19 +51,22 @@
     height: 250px;
     box-shadow: 0px 0px 5px 5px $grisclair;
     @include desktop-only {
-      justify-self: center;
-      margin-left: 25px;
+      margin-left: 0;
     }
     @include laptop-only {
-      margin-top: 100px;
-      margin-left: 60px;
-      width: 400px;
+      margin-top: 30px;
+      width: 455px;
     }
     @include tablette-only {
       width: 350px;
       margin-left: 0;
       margin-top: 30px;
-      &--restotop {
+    }
+    &--restotop {
+      @include tablette-only {
+        margin-top: 90px;
+      }
+      @include laptop-only {
         margin-top: 90px;
       }
     }
@@ -76,6 +81,9 @@
       margin-top: -160px;
       width: 80px;
       height: 30px;
+      @include laptop-only {
+        margin-left: 320px;
+      }
       &__nom {
         @include darken-tertiary;
         font-size: 14px;
@@ -97,6 +105,9 @@
       width: 250px;
       margin-left: 10px;
       position: absolute;
+      @include laptop-only {
+        margin-left: 80px;
+      }
     }
     h4 {
       font-weight: 300;
@@ -104,6 +115,9 @@
       margin-left: 10px;
       width: 150px;
       height: 0;
+      @include laptop-only {
+        margin-left: 80px;
+      }
     }
     &__depassement {
       width: 26.5px; 
@@ -112,11 +126,14 @@
       padding-bottom: 0;
       position: absolute;
       transform: rotate(45deg);
-      border-radius: 30px 28px 8px 20px;
+      border-radius: 28px 28px 8px 28px;
       margin-left: 270px; 
       margin-top: -45px; 
       z-index: 2;
       overflow: hidden;
+      @include laptop-only {
+        margin-left: 340px;
+      }
       .fa-heart {
         margin-top: -40px;
         position: relative;
@@ -153,14 +170,14 @@
         }
         &:hover {
           &::after {
-            transform: translateY(-21.2px);
+            transform: translateY(-21.1px);
             cursor: pointer;
           }
         }
         &::after {
           content: "";
           position: absolute;
-          border-radius: 3px 5px 5px 10px;
+          border-radius: 6px 6px 5px 10px;
           background: linear-gradient(to right top, $color-secondary 10%, $color-primary);
           transition: transform 3s cubic-bezier(.13,.48,.55,.26);
           top: 25px;
@@ -168,7 +185,7 @@
           right: 0;
           bottom: 0;
           height: 25px;
-          width: 25px;
+          width: 24px;
           z-index: -1;
         } 
       }
