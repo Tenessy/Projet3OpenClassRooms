@@ -7,6 +7,15 @@
   border: none;
   position: relative;
   z-index: 1;
+  &__resto{
+    width: 185px;
+    margin-top: 50px;
+    &__note-only {
+      @include laptop-only {
+        margin-top: 450px !important;
+      } 
+    }
+  }
   &--desktop {
     @include desktop-only {
       position: absolute;
