@@ -35,7 +35,7 @@
     @include tablette-only {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+     
     }
     h3{
       color: white;
@@ -47,22 +47,29 @@
       }
       @include laptop-only {
         @include tittle-footer;
+        margin-top: -30px;
+        margin-left: 0;
+        font-size: 16px;
       }
       @include tablette-only {
         @include tittle-footer;
+        margin-left: -10px;
+        margin-top: 10px;
       }
     }
     .fa-hands-helping {
-      margin-top: -8px;
+      @include mobile-only {
+        margin-top: -8px;
+      }
       @include desktop-only {
         margin-left: 315px;
       }
       @include laptop-only {
-        margin-left: 300px;
+        margin-left: 160px;
         font-size: 12px;
       }
       @include tablette-only {
-        margin-left: 300px;
+        margin-left: 150px;
       }
     }
     &__fafood {
@@ -78,14 +85,14 @@
       }
       @include laptop-only {
         position: absolute;
-        margin-left: 80px;
+        margin-left: 0;
         margin-top: 35px;
         font-size: 12px;
       }
       @include tablette-only {
         position: absolute;
-        margin-left: 80px;
-        margin-top: 35px;
+        margin-left: -10px;
+        margin-top: 50px;
         font-size: 12px;
       }
     }
@@ -101,18 +108,23 @@
         font-size: 14px;
       }
       @include laptop-only {
-        margin-left: 100px;
+        margin-left: 30px;
         margin-top: 50px;
         font-size: 12px;
       }
       @include tablette-only {
-        margin-left: 100px;
+        margin-left: 40px;
         margin-top: 50px;
         font-size: 12px;
       }
     }
     &--pos {
-      margin-top: 20px !important;
+      @include mobile-only {
+        margin-top: 20px !important;
+      }
+      @include tablette-only {
+        margin-left: 10px !important;
+      }
     }
     h5 {
       font-weight: 400;
@@ -126,12 +138,12 @@
         font-size: 14px;
       }
       @include laptop-only {
-        margin-left: 100px;
+        margin-left: 30px;
         margin-top: 50px;
         font-size: 12px;
       }
       @include tablette-only {
-        margin-left: 100px;
+        margin-left: 30px;
         margin-top: 50px;
         font-size: 12px;
       }
