@@ -152,13 +152,22 @@ a {
   position: relative;
   z-index: 1;
 }
+.explore__resto {
+  width: 185px;
+  margin-top: 50px;
+}
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
+  .explore__resto__note-only {
+    margin-top: 450px !important;
+  }
+}
 @media screen and (min-width: 1440px) {
   .explore--desktop {
     position: absolute;
     margin-top: 570px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .explore--desktop {
     position: absolute;
     margin-top: 500px;
@@ -229,13 +238,13 @@ header .fa-arrow-left {
             align-items: center;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .basdepage {
     margin-top: 0;
     padding-bottom: 0;
   }
 }
-@media screen and (min-width: 780px) and (max-width: 1024px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
   .basdepage {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -263,7 +272,7 @@ header .fa-arrow-left {
     margin-left: -350px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .basdepage__lien {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -277,7 +286,7 @@ header .fa-arrow-left {
             align-items: center;
   }
 }
-@media screen and (min-width: 780px) and (max-width: 1024px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
   .basdepage__lien {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -286,9 +295,6 @@ header .fa-arrow-left {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
   }
 }
 .basdepage__lien h3 {
@@ -302,42 +308,46 @@ header .fa-arrow-left {
     margin-left: 20px;
     position: absolute;
     margin-top: 0;
-    margin-left: 420px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .basdepage__lien h3 {
     margin-left: 20px;
     position: absolute;
     margin-top: 0;
-    margin-left: 420px;
+    margin-top: -30px;
+    margin-left: 0;
+    font-size: 16px;
   }
 }
-@media screen and (min-width: 780px) and (max-width: 1024px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
   .basdepage__lien h3 {
     margin-left: 20px;
     position: absolute;
     margin-top: 0;
-    margin-left: 420px;
+    margin-left: -10px;
+    margin-top: 10px;
   }
 }
-.basdepage__lien .fa-hands-helping {
-  margin-top: -8px;
+@media screen and (max-width: 766px) {
+  .basdepage__lien .fa-hands-helping {
+    margin-top: -8px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .basdepage__lien .fa-hands-helping {
     margin-left: 315px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .basdepage__lien .fa-hands-helping {
-    margin-left: 300px;
+    margin-left: 160px;
     font-size: 12px;
   }
 }
-@media screen and (min-width: 780px) and (max-width: 1024px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
   .basdepage__lien .fa-hands-helping {
-    margin-left: 300px;
+    margin-left: 150px;
   }
 }
 .basdepage__lien__fafood {
@@ -354,19 +364,19 @@ header .fa-arrow-left {
     font-size: 16px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .basdepage__lien__fafood {
     position: absolute;
-    margin-left: 80px;
+    margin-left: 0;
     margin-top: 35px;
     font-size: 12px;
   }
 }
-@media screen and (min-width: 780px) and (max-width: 1024px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
   .basdepage__lien__fafood {
     position: absolute;
-    margin-left: 80px;
-    margin-top: 35px;
+    margin-left: -10px;
+    margin-top: 50px;
     font-size: 12px;
   }
 }
@@ -384,22 +394,29 @@ header .fa-arrow-left {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .basdepage__lien h4 {
-    margin-left: 100px;
+    margin-left: 30px;
     margin-top: 50px;
     font-size: 12px;
   }
 }
-@media screen and (min-width: 780px) and (max-width: 1024px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
   .basdepage__lien h4 {
-    margin-left: 100px;
+    margin-left: 40px;
     margin-top: 50px;
     font-size: 12px;
   }
 }
-.basdepage__lien--pos {
-  margin-top: 20px !important;
+@media screen and (max-width: 766px) {
+  .basdepage__lien--pos {
+    margin-top: 20px !important;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .basdepage__lien--pos {
+    margin-left: 10px !important;
+  }
 }
 .basdepage__lien h5 {
   font-weight: 400;
@@ -415,18 +432,70 @@ header .fa-arrow-left {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .basdepage__lien h5 {
-    margin-left: 100px;
+    margin-left: 30px;
     margin-top: 50px;
     font-size: 12px;
   }
 }
-@media screen and (min-width: 780px) and (max-width: 1024px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
   .basdepage__lien h5 {
-    margin-left: 100px;
+    margin-left: 30px;
     margin-top: 50px;
     font-size: 12px;
+  }
+}
+
+.resto-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -20px;
+  border-radius: 25px 25px 25px 25px;
+}
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
+  .resto-img {
+    border-radius: 25px 25px 25px 25px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .resto-img {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    border-radius: 25px 25px 25px 25px;
+  }
+}
+.resto-img img {
+  aspect-ratio: 3/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
+  .resto-img img {
+    width: 100%;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 25px 25px 25px 25px;
+    aspect-ratio: 3/2;
+  }
+}
+@media screen and (min-width: 1023px) and (max-width: 1440px) and (min-width: 1440px) {
+  .resto-img img {
+    aspect-ratio: 3/2;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 90%;
   }
 }
 
@@ -444,8 +513,8 @@ header .fa-arrow-left {
       -ms-flex-align: center;
           align-items: center;
   height: auto;
-  padding-bottom: 60px;
-  margin-top: -80px;
+  padding-bottom: 90px;
+  margin-top: -50px;
   border-radius: 25px 25px 0px 0px;
   background-color: #f2f2f2;
 }
@@ -464,14 +533,16 @@ header .fa-arrow-left {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
-    border-radius: 25px 25px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
+    width: 90%;
+    border-radius: 25px 25px 0px 0px;
     padding-bottom: 250px;
-    margin-top: -450px;
+    margin-top: -550px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -487,6 +558,22 @@ header .fa-arrow-left {
     position: relative;
     margin-top: -350px;
     padding-bottom: 200px;
+    border-radius: 0;
+  }
+}
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
+  .nomresto__entree__note-only {
+    margin-top: 50px !important;
+  }
+}
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
+  .nomresto__plat__note-only {
+    margin-top: -20px !important;
+  }
+}
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
+  .nomresto__dessert__note-only {
+    margin-top: -20px !important;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -500,12 +587,12 @@ header .fa-arrow-left {
     margin-top: 50px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto section {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
     margin-left: 0;
-    margin-top: 80px;
+    margin-top: 50px;
   }
 }
 .nomresto__france {
@@ -518,7 +605,7 @@ header .fa-arrow-left {
     margin-left: 0;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto__france {
     position: absolute;
     margin-top: -230px;
@@ -531,12 +618,11 @@ header .fa-arrow-left {
 @media screen and (min-width: 1440px) {
   .nomresto__palette {
     position: absolute;
-    margin-top: -220px;
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+    margin-top: -230px;
+    margin-left: 0;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto__palette {
     position: absolute;
     margin-top: -230px;
@@ -553,7 +639,7 @@ header .fa-arrow-left {
     margin-left: 0;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto__delice {
     position: absolute;
     margin-top: -230px;
@@ -570,64 +656,65 @@ header .fa-arrow-left {
     margin-left: 0;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto__note {
     position: absolute;
     margin-top: -230px;
     margin-left: 0;
+    margin-top: -300px;
   }
 }
 .nomresto__entre {
-  margin-left: -290px;
+  margin-left: 10px;
 }
 @media screen and (min-width: 1440px) {
   .nomresto__entre {
     margin-left: 10px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto__entre {
     margin-left: 10px;
   }
 }
 .nomresto__plat {
-  margin-left: -305px;
+  margin-left: 10px;
 }
 @media screen and (min-width: 1440px) {
   .nomresto__plat {
     margin-left: 10px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto__plat {
     margin-left: 10px;
   }
 }
 .nomresto__dessert {
-  margin-left: -285px;
+  margin-left: 10px;
 }
 @media screen and (min-width: 1440px) {
   .nomresto__dessert {
     margin-left: 10px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto__dessert {
     margin-left: 10px;
   }
 }
 .nomresto__bordinferieur {
   border-bottom: 2px solid #99E2D0;
-  width: 40px;
-  margin-top: -5px;
-  margin-left: -300px;
+  width: 30px;
+  margin-top: -8px;
+  margin-left: 10px;
 }
 @media screen and (min-width: 1440px) {
   .nomresto__bordinferieur {
     margin-left: 10px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto__bordinferieur {
     margin-left: 10px;
   }
@@ -641,17 +728,20 @@ header .fa-arrow-left {
 @media screen and (min-width: 1440px) {
   .nomresto__heart {
     position: absolute;
-    margin-top: -230px;
+    margin-top: -250px;
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
-    margin-left: 100px;
+    margin-left: 310px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto__heart {
     position: absolute;
     margin-top: -250px;
-    margin-left: 260px;
+    margin-left: 280px;
+  }
+  .nomresto__heart__note-only {
+    margin-top: -320px;
   }
 }
 .nomresto h3 {
@@ -659,7 +749,7 @@ header .fa-arrow-left {
   font-weight: 100;
   margin-top: 30px;
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto h3 {
     font-size: 14px;
   }
@@ -720,9 +810,9 @@ header .fa-arrow-left {
   height: 61px;
   border-radius: 0px 15px 15px 0px;
   margin-left: 350px;
-  margin-top: -68px;
+  margin-top: -71px;
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto__carte__ajouter {
     margin-top: -72px;
   }
@@ -748,11 +838,11 @@ header .fa-arrow-left {
   transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }
 .nomresto__carte h4 {
-  font-size: 12px;
+  font-size: 13px;
   margin-left: 10px;
   font-weight: 500;
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto__carte h4 {
     font-size: 14px;
     margin-top: 10px;
@@ -763,7 +853,7 @@ header .fa-arrow-left {
   margin-top: -10px;
   padding-left: 290px;
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto__carte__position {
     margin-top: -10px !important;
   }
@@ -782,48 +872,17 @@ header .fa-arrow-left {
   margin-left: 10px;
   margin-top: -10px;
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto__carte h5 {
     font-size: 13px;
   }
 }
 
-.resto-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-  .resto-img {
-    border-radius: 25px 25px 25px 25px;
-  }
-}
-.resto-img img {
-  aspect-ratio: 3/2;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-  .resto-img img {
-    width: 95%;
-    -o-object-position: center;
-       object-position: center;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 25px 25px 25px 25px;
-    aspect-ratio: 3/2;
-  }
-}
-
 .basdepage {
   position: absolute;
-  margin-top: 930px;
+  margin-top: 970px;
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
   .basdepage {
     margin-top: 0;
   }
@@ -835,7 +894,12 @@ header .fa-arrow-left {
 }
 
 .position__basdepage {
-  margin-top: 1000px;
+  margin-top: 1050px;
+}
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
+  .position__basdepage {
+    margin-top: 0;
+  }
 }
 @media screen and (min-width: 1440px) {
   .position__basdepage {
@@ -844,5 +908,5 @@ header .fa-arrow-left {
 }
 
 .nomresto__padding {
-  padding-bottom: 100px;
+  padding-bottom: 120px;
 }/*# sourceMappingURL=restaurant.css.map */

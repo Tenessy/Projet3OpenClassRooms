@@ -8,30 +8,9 @@
 @import "../layouts/footer";
 @import "../layouts/carteresto";
 
-
-.resto-img {
-    display: flex;
-    justify-content: center;
-   @include laptop-only {
-      @include radius;
-   }
-    
-    img {
-      aspect-ratio: 3/2;   
-      object-fit: cover;
-      width: 100%;
-       @include laptop-only {
-           width: 95%;
-           object-position: center;
-           object-fit: cover;
-           @include radius;
-           aspect-ratio: 3/2;  
-        }
-    }   
-}
 .basdepage {
     position: absolute;
-    margin-top: 930px;
+    margin-top: 970px;
     @include laptop-only {
         margin-top: 0;
     }
@@ -40,11 +19,14 @@
     }
 }
 .position__basdepage {
-    margin-top: 1000px;
+    margin-top: 1050px;
+    @include laptop-only {
+        margin-top: 0;
+    }
     @include desktop-only {
         margin-top: 60px;
     }
 }
 .nomresto__padding {
-    padding-bottom: 100px;
+    padding-bottom: 120px;
 }
