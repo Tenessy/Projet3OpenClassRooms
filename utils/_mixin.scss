@@ -46,6 +46,11 @@
     @content;
   }
 }
+@mixin mobile-only {
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    @content;
+  }
+}
 @mixin position-tittle {
   position: absolute;
   margin-top: -230px;
@@ -56,11 +61,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  
 }
 @mixin tittle-footer {
   margin-left: 20px;
   position: absolute;
   margin-top: 0;
-  margin-left: 420px; 
+  
 } 
