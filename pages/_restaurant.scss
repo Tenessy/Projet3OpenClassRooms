@@ -41,8 +41,6 @@
       margin-top: -560px;
       margin-left: -600px;
     }
-
-
   }
   &__list {
     width: 335px;
@@ -177,7 +175,7 @@
         &::after {
           content: "";
           position: absolute;
-          border-radius: 6px 6px 5px 10px;
+          border-radius: 3px 3px 3px 3px;
           background: linear-gradient(to right top, $color-secondary 10%, $color-primary);
           transition: transform 3s cubic-bezier(.13,.48,.55,.26);
           top: 25px;
