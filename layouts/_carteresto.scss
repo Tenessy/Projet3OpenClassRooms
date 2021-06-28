@@ -3,15 +3,11 @@
   justify-content: center;
   align-items: center;
   margin-top: -20px;
-  border-radius: 25px 25px 25px 25px;
-  @include laptop-only {
-    @include radius;
-  }
   @include desktop-only {
     margin-right: auto;
     margin-left: auto;
-    width: 90%;
-    border-radius: 25px 25px 25px 25px;
+    width: 100%;
+    @include radius;
   }
   img {
     aspect-ratio: 3/2;   
@@ -21,12 +17,11 @@
       width: 100%;
       object-position: center;
       object-fit: cover;
-      @include radius;
       aspect-ratio: 3/2;  
       @include desktop-only {
         aspect-ratio: 3/2;   
         object-fit: cover;
-        width: 90%;
+        width: 100%;
       }
     }
   }   
@@ -43,17 +38,14 @@
     border-radius: 25px 25px 0px 0px;
     background-color: #f2f2f2;
     @include desktop-only {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
+      @include resto-disposition;
       margin-left: auto;
       margin-right: auto;
       position: relative;
       width: 90%;
       border-radius: 25px 25px 0px 0px;
       padding-bottom: 250px;
-      margin-top: -550px;
+      margin-top: -605px;
     }
     @include laptop-only {
       display: flex;
@@ -63,7 +55,7 @@
       position: relative;
       margin-top: -350px;
       padding-bottom: 200px;
-      border-radius: 0;
+      
     }
     &__entree {
       &__note-only {
@@ -89,7 +81,6 @@
     section {
       @include desktop-only {
         margin-top: 90px;
-        margin-left: 80px;
         transform: scale(1.10);
         section >.nomresto__carte {
           margin-top: 50px;
