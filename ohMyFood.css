@@ -147,12 +147,68 @@ a {
 header h1 {
   text-align: center;
 }
+header h3 {
+  position: absolute;
+  margin-top: -55px;
+  color: black;
+  margin-left: 30px;
+}
+@media screen and (min-width: 1440px) {
+  header h3 {
+    margin-left: 110px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  header h3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 766px) {
+  header h3 {
+    display: none;
+  }
+}
+header .fa-home {
+  margin-top: -53px;
+  position: absolute;
+  font-size: 19px;
+  margin-left: 105px;
+  color: black;
+}
+@media screen and (min-width: 1440px) {
+  header .fa-home {
+    margin-left: 190px;
+    font-size: 20px;
+    margin-top: -52px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  header .fa-home {
+    display: none;
+  }
+}
+@media screen and (max-width: 766px) {
+  header .fa-home {
+    display: none;
+  }
+}
 header .fa-arrow-left {
-  margin-top: 10px;
+  margin-top: -55px;
   position: absolute;
   font-size: 20px;
   margin-left: 30px;
   color: black;
+}
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
+  header .fa-arrow-left {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header .fa-arrow-left {
+    display: none;
+  }
 }
 
 .basdepage {
@@ -163,17 +219,7 @@ header .fa-arrow-left {
   width: 100%;
   background-color: #323333;
   padding-bottom: 10px;
-}
-@media screen and (min-width: 1440px) {
-  .basdepage {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+  position: absolute;
 }
 @media screen and (min-width: 1023px) and (max-width: 1440px) {
   .basdepage {
@@ -206,7 +252,7 @@ header .fa-arrow-left {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-left: -350px;
+    margin-left: 40px;
   }
 }
 @media screen and (min-width: 1023px) and (max-width: 1440px) {
@@ -245,6 +291,7 @@ header .fa-arrow-left {
     margin-left: 20px;
     position: absolute;
     margin-top: 0;
+    margin-left: 70px;
   }
 }
 @media screen and (min-width: 1023px) and (max-width: 1440px) {
@@ -986,7 +1033,7 @@ body {
 .restaurant__list__depassement .fa-heart::after {
   content: "";
   position: absolute;
-  border-radius: 6px 6px 5px 10px;
+  border-radius: 3px 3px 3px 3px;
   background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, #FF79DA), to(#9356DC));
   background: linear-gradient(to right top, #FF79DA 10%, #9356DC);
   -webkit-transition: -webkit-transform 3s cubic-bezier(0.13, 0.48, 0.55, 0.26);
