@@ -24,9 +24,12 @@
         margin-top: 0;
     }
     @include desktop-only {
-        margin-top: 60px;
+        margin-top: 0;
     }
 }
 .nomresto__padding {
     padding-bottom: 120px;
+    @include desktop-only {
+        padding-bottom: 180px;
+    }
 }
