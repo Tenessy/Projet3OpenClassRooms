@@ -52,24 +52,68 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes bars {
+@-webkit-keyframes validate-rotation {
   from {
-    -webkit-transform: scaleY(0.5);
-            transform: scaleY(0.5);
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
   }
   to {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+@keyframes validate-rotation {
+  from {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes bars {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 @keyframes bars {
-  from {
-    -webkit-transform: scaleY(0.5);
-            transform: scaleY(0.5);
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
-  to {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 @-webkit-keyframes cache {
@@ -632,7 +676,7 @@ header .fa-arrow-left {
   }
 }
 .nomresto__france {
-  margin-left: -170px;
+  margin-left: -150px;
 }
 @media screen and (min-width: 1440px) {
   .nomresto__france {
@@ -649,7 +693,7 @@ header .fa-arrow-left {
   }
 }
 .nomresto__palette {
-  margin-left: -120px;
+  margin-left: -100px;
 }
 @media screen and (min-width: 1440px) {
   .nomresto__palette {
@@ -666,7 +710,7 @@ header .fa-arrow-left {
   }
 }
 .nomresto__delice {
-  margin-left: -130px;
+  margin-left: -110px;
 }
 @media screen and (min-width: 1440px) {
   .nomresto__delice {
@@ -683,7 +727,7 @@ header .fa-arrow-left {
   }
 }
 .nomresto__note {
-  margin-left: -110px;
+  margin-left: -100px;
 }
 @media screen and (min-width: 1440px) {
   .nomresto__note {
@@ -805,32 +849,32 @@ header .fa-arrow-left {
           transform: translateX(-100%);
 }
 .nomresto__carte:hover > .nomresto__carte__ajouter > .nomresto__carte__ajouter__validate {
-  -webkit-transform: rotate(0turn);
-          transform: rotate(0turn);
+  -webkit-animation: validate-rotation 500ms ease-in-out;
+          animation: validate-rotation 500ms ease-in-out;
 }
 .nomresto__carte:hover > .nomresto__carte__position {
   -webkit-transform: translateX(-20%);
           transform: translateX(-20%);
 }
 .nomresto__carte__progressive {
-  -webkit-animation: apparition-progressive 1500ms;
-          animation: apparition-progressive 1500ms;
+  -webkit-animation: apparition-progressive 2000ms backwards;
+          animation: apparition-progressive 2000ms backwards;
 }
 .nomresto__carte__progressive--1 {
-  -webkit-animation-delay: 150ms;
-          animation-delay: 150ms;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
 }
 .nomresto__carte__progressive--2 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+.nomresto__carte__progressive--3 {
   -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
 }
-.nomresto__carte__progressive--3 {
-  -webkit-animation-delay: 450ms;
-          animation-delay: 450ms;
-}
 .nomresto__carte__progressive--4 {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
 }
 .nomresto__carte__ajouter {
   display: -webkit-box;
@@ -857,21 +901,21 @@ header .fa-arrow-left {
   background-color: #99E2D0;
 }
 .nomresto__carte__ajouter--trans {
-  -webkit-transition: -webkit-transform 400ms ease-in-out;
-  transition: -webkit-transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 .nomresto__carte__ajouter__validate {
   color: white;
 }
 .nomresto__carte__ajouter__validate--rotation {
-  -webkit-transform: rotate(1turn);
-          transform: rotate(1turn);
-  -webkit-transition: -webkit-transform 400ms ease-in-out;
-  transition: -webkit-transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 .nomresto__carte h4 {
   font-size: 13px;
@@ -897,10 +941,10 @@ header .fa-arrow-left {
 .nomresto__carte__position--trans {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: -webkit-transform 400ms ease-in-out;
-  transition: -webkit-transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 .nomresto__carte h5 {
   font-size: 11px;
