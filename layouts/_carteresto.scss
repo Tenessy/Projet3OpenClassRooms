@@ -93,7 +93,7 @@
       }
     }
     &__france {
-      margin-left: -170px;
+      margin-left: -150px;
       @include desktop-only {
         @include position-tittle;
       }
@@ -102,7 +102,7 @@
       }
     }
     &__palette {
-      margin-left: -120px;
+      margin-left: -100px;
       @include desktop-only {
         @include position-tittle;
       }
@@ -111,7 +111,7 @@
       }
     }
     &__delice {
-      margin-left: -130px;
+      margin-left: -110px;
       @include desktop-only {
         @include position-tittle;  
       }
@@ -121,7 +121,7 @@
 
     }
     &__note {
-      margin-left: -110px;
+      margin-left: -100px;
       @include desktop-only {
         @include position-tittle;
       }
@@ -208,14 +208,14 @@
       &:hover > .nomresto__carte__ajouter{
         transform: translateX(-100%);
         & > .nomresto__carte__ajouter__validate {
-          transform: rotate(0turn);
+          animation: validate-rotation 500ms ease-in-out;
         } 
       }
       &:hover > .nomresto__carte__position {
         transform: translateX(-20%);
       }
       &__progressive {
-        animation: apparition-progressive $anim-dur;
+        animation: apparition-progressive $anim-dur backwards;
         @for $i from 1 through $num-progres {
           &--#{$i} {
             animation-delay: $anim-delay * $i;
@@ -243,7 +243,7 @@
         &__validate {
           color: white;
           &--rotation {
-            transform: rotate(1turn);
+            transform: rotate(1deg);
              @include transform;
           }      
         }
