@@ -74,46 +74,46 @@
 }
 @-webkit-keyframes bars {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
   25% {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
   }
   75% {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: translateY(-75px);
+            transform: translateY(-75px);
   }
 }
 @keyframes bars {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
   25% {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
   }
   75% {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: translateY(-75px);
+            transform: translateY(-75px);
   }
 }
 @-webkit-keyframes cache {
@@ -166,6 +166,30 @@
   100% {
     background: rgba(0, 0, 0, 0.6);
     z-index: 99;
+  }
+}
+@-webkit-keyframes slide-suspens {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    visibility: hidden;
+  }
+  to {
+    -webkit-transform: translateX(-43px);
+            transform: translateX(-43px);
+    visibility: visible;
+  }
+}
+@keyframes slide-suspens {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    visibility: hidden;
+  }
+  to {
+    -webkit-transform: translateX(-43px);
+            transform: translateX(-43px);
+    visibility: visible;
   }
 }
 .shrikhand {
@@ -853,8 +877,15 @@ header .fa-arrow-left {
           animation: validate-rotation 500ms ease-in-out;
 }
 .nomresto__carte:hover > .nomresto__carte__position {
-  -webkit-transform: translateX(-20%);
-          transform: translateX(-20%);
+  -webkit-transform: translateX(-40px);
+          transform: translateX(-40px);
+}
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
+  .nomresto__carte:hover > .nomresto__carte__suspension {
+    -webkit-transform: translateX(-52px);
+            transform: translateX(-52px);
+    visibility: visible;
+  }
 }
 .nomresto__carte__progressive {
   -webkit-animation: apparition-progressive 2000ms backwards;
@@ -901,10 +932,10 @@ header .fa-arrow-left {
   background-color: #99E2D0;
 }
 .nomresto__carte__ajouter--trans {
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transition: visibility 400ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transition: visibility 400ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, visibility 400ms ease-in-out;
+  transition: transform 500ms ease-in-out, visibility 400ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 .nomresto__carte__ajouter__validate {
   color: white;
@@ -912,10 +943,10 @@ header .fa-arrow-left {
 .nomresto__carte__ajouter__validate--rotation {
   -webkit-transform: rotate(1deg);
           transform: rotate(1deg);
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transition: visibility 400ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transition: visibility 400ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, visibility 400ms ease-in-out;
+  transition: transform 500ms ease-in-out, visibility 400ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 .nomresto__carte h4 {
   font-size: 13px;
@@ -932,6 +963,7 @@ header .fa-arrow-left {
   position: absolute;
   margin-top: -10px;
   padding-left: 290px;
+  z-index: 1;
 }
 @media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto__carte__position {
@@ -941,10 +973,10 @@ header .fa-arrow-left {
 .nomresto__carte__position--trans {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transition: visibility 400ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transition: visibility 400ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, visibility 400ms ease-in-out;
+  transition: transform 500ms ease-in-out, visibility 400ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 .nomresto__carte h5 {
   font-size: 11px;
@@ -956,6 +988,36 @@ header .fa-arrow-left {
   .nomresto__carte h5 {
     font-size: 13px;
   }
+}
+.nomresto__carte__suspension {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  visibility: hidden;
+  padding-top: 0;
+  background-color: white;
+  width: 70px;
+  height: 20px;
+  margin-left: 250px;
+  margin-top: -37px;
+  font-size: 25px;
+}
+.nomresto__carte__suspension h6 {
+  margin-top: 30px;
+  margin-left: -40px;
+}
+.nomresto__carte__suspension--trans {
+  -webkit-transition: visibility 400ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transition: visibility 400ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, visibility 400ms ease-in-out;
+  transition: transform 500ms ease-in-out, visibility 400ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
 .basdepage {
