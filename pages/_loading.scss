@@ -1,8 +1,8 @@
 $cd-bars: #15DEA5;
 $size: 3vh;
 $num-bars: 5;
-$anim-dur: 1000ms;
-$contain-dur: 3000ms;
+$anim-dur: 600ms;
+$contain-dur: 2500ms;
 $anim-delay: $anim-dur / $num-bars;
 body {
   animation: cache 500ms;
@@ -16,7 +16,7 @@ body {
     background: $lineargradient;
     height: 100%;
     width: $size;
-    animation: bars $anim-dur backwards infinite;
+    animation: bars $contain-dur backwards infinite;
     @for $i from 1 through $num-bars {
       &--#{$i} {
         animation-delay: $anim-delay * $i;

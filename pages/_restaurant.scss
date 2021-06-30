@@ -53,7 +53,7 @@
     }
     @include laptop-only {
       margin-top: 30px;
-      width: 455px;
+      width: 430px;
     }
     @include tablette-only {
       width: 350px;
@@ -153,18 +153,13 @@
           }
         }
         &::before {
+        //background: -webkit-gradient(linear, left top, left bottom, from($color-secondary), to($color-primary));//(linear, left top, left bottom, from(#f00), to(#333));
           background-color: black;
-        //  background: -webkit-gradient(linear, left top, left bottom, from($color-secondary), to($color-primary));//(linear, left top, left bottom, from(#f00), to(#333));
           color: transparent;
           content: "\f004";
-          //transition: 3s background-position ease-in-out;
-          //background-size: 200%;
-           background-clip: text;
-           -webkit-text-fill-color: transparent;
-           display: initial; 
-         /* reset Font Awesome's display:inline-block */
-        
-        // transition: color 3s ease-in-out;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          display: initial; 
         }
         &:hover {
           &::after {
