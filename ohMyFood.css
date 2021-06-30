@@ -94,46 +94,46 @@ a {
 }
 @-webkit-keyframes bars {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
   25% {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
   }
   75% {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: translateY(-75px);
+            transform: translateY(-75px);
   }
 }
 @keyframes bars {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
   25% {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
   }
   75% {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: translateY(-75px);
+            transform: translateY(-75px);
   }
 }
 @-webkit-keyframes cache {
@@ -186,6 +186,30 @@ a {
   100% {
     background: rgba(0, 0, 0, 0.6);
     z-index: 99;
+  }
+}
+@-webkit-keyframes slide-suspens {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    visibility: hidden;
+  }
+  to {
+    -webkit-transform: translateX(-43px);
+            transform: translateX(-43px);
+    visibility: visible;
+  }
+}
+@keyframes slide-suspens {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    visibility: hidden;
+  }
+  to {
+    -webkit-transform: translateX(-43px);
+            transform: translateX(-43px);
+    visibility: visible;
   }
 }
 header h1 {
@@ -744,28 +768,28 @@ body {
   background: linear-gradient(#FF79DA 10%, #9356DC);
   height: 100%;
   width: 3vh;
-  -webkit-animation: bars 1000ms backwards infinite;
-          animation: bars 1000ms backwards infinite;
+  -webkit-animation: bars 2500ms backwards infinite;
+          animation: bars 2500ms backwards infinite;
 }
 .load__bar--1 {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  -webkit-animation-delay: 120ms;
+          animation-delay: 120ms;
 }
 .load__bar--2 {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
+  -webkit-animation-delay: 240ms;
+          animation-delay: 240ms;
 }
 .load__bar--3 {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
+  -webkit-animation-delay: 360ms;
+          animation-delay: 360ms;
 }
 .load__bar--4 {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
+  -webkit-animation-delay: 480ms;
+          animation-delay: 480ms;
 }
 .load__bar--5 {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
 .container {
@@ -786,8 +810,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-animation: fond 3000ms;
-          animation: fond 3000ms;
+  -webkit-animation: fond 2500ms;
+          animation: fond 2500ms;
 }
 
 .localisation {
@@ -940,7 +964,7 @@ body {
 @media screen and (min-width: 1023px) and (max-width: 1440px) {
   .restaurant__list {
     margin-top: 30px;
-    width: 455px;
+    width: 430px;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1023px) {
@@ -1067,7 +1091,6 @@ body {
           background-clip: text;
   -webkit-text-fill-color: transparent;
   display: initial;
-  /* reset Font Awesome's display:inline-block */
 }
 .restaurant__list__depassement .fa-heart:hover::after {
   -webkit-transform: translateY(-21.1px);
