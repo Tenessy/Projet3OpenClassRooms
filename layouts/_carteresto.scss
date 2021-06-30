@@ -212,8 +212,15 @@
         } 
       }
       &:hover > .nomresto__carte__position {
-        transform: translateX(-20%);
+        transform: translateX(-40px);
       }
+      @include laptop-only {
+        &:hover > .nomresto__carte__suspension {
+          transform: translateX(-52px);
+          visibility: visible;
+        }
+      }
+      
       &__progressive {
         animation: apparition-progressive $anim-dur backwards;
         @for $i from 1 through $num-progres {
@@ -261,6 +268,7 @@
         position: absolute;
         margin-top: -10px;
         padding-left: 290px;
+        z-index: 1;
         @include laptop-only {
           margin-top: -10px !important;
         }
@@ -277,6 +285,27 @@
         @include laptop-only {
           font-size: 13px;
         }
-      }  
+      }
+      &__suspension {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        visibility: hidden;
+        padding-top: 0;
+        background-color: white;
+        width: 70px;
+        height: 20px;
+        margin-left: 250px;
+        margin-top: -37px;
+        font-size: 25px;
+        h6 {
+          margin-top: 30px;
+          margin-left: -40px;
+        }
+        &--trans {
+          @include transform;
+        }
+      }   
     }
 }
