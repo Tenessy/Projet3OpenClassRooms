@@ -2,7 +2,7 @@ $cd-bars: #15DEA5;
 $size: 3vh;
 $num-bars: 5;
 $anim-dur: 600ms;
-$contain-dur: 2500ms;
+$contain-dur: 3500ms;
 $anim-delay: $anim-dur / $num-bars;
 body {
   animation: cache 500ms;
