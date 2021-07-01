@@ -193,10 +193,17 @@
       }
       &:hover > .nomresto__carte__position {
         transform: translateX(-40px);
+        @include mobile-only {
+          transform: translateX(-50px);
+        }
       }
-      @include laptop-only {
-        &:hover > .nomresto__carte__suspension {
+      &:hover > .nomresto__carte__suspension {
+        @include laptop-only {
           transform: translateX(-52px);
+          visibility: visible;
+        }
+        @include mobile-only {
+          transform: translateX(-61px);
           visibility: visible;
         }
       }
