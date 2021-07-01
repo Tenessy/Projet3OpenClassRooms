@@ -610,7 +610,7 @@ header .fa-arrow-left {
     aspect-ratio: 3/2;
   }
 }
-@media screen and (min-width: 1023px) and (max-width: 1440px) and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .resto-img img {
     aspect-ratio: 3/2;
     -o-object-fit: cover;
