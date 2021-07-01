@@ -1,4 +1,5 @@
 .restaurant {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -9,11 +10,70 @@
     &--grey {
       background-color: $grisclair;
       width: 100%;
+=======
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  position: relative;
+  padding-bottom: 60px;
+  @include desktop-only {
+    @include resto-disposition;
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 80px;
+  
+  }
+  @include laptop-only {
+    @include resto-disposition;
+    padding-bottom: 120px;
+  }
+  @include tablette-only {
+    @include resto-disposition;
+  }
+  &--grey {
+    background-color: $grisclair;
+  }
+  h2 {
+    margin-left: -200px;
+    padding-top: 60px;
+    @include desktop-only {
+      margin-top: -350px;
+      margin-left: -1250px;
+      position: absolute;
+      transform: scale(1.1);
     }
-    h2 {
-      margin-left: -200px;
-     padding-top: 60px;
+    @include laptop-only {
+      position: absolute;
+      margin-top: -560px;
+      margin-left: -820px;
     }
+    @include tablette-only {
+      position: absolute;
+      margin-top: -560px;
+      margin-left: -600px;
+    }
+  }
+  &__list {
+    width: 335px;
+    margin-top: 20px;
+    @include radius;
+    height: 250px;
+    box-shadow: 0px 0px 5px 5px $grisclair;
+    @include desktop-only {
+      margin-left: 0;
+    }
+    @include laptop-only {
+      margin-top: 30px;
+      width: 430px;
+>>>>>>> cagnotte
+    }
+    @include tablette-only {
+      width: 350px;
+      margin-left: 0;
+      margin-top: 30px;
+    }
+<<<<<<< HEAD
     &__list {
        width: 335px;
        flex-wrap: wrap;
@@ -44,32 +104,65 @@
         height: 175px;
         width: 335px;
         border-radius: 15px 15px 0px 0px;
+=======
+    &--restotop {
+      @include tablette-only {
+        margin-top: 90px;
+>>>>>>> cagnotte
       }
-      h3 {
-        font-weight: 500;
+      @include laptop-only {
+        margin-top: 90px;
+      }
+    }
+    &--fondblanc {
+      background-color: white;
+    }
+    &__nouveau {
+      @include lighten-tertiary;
+      margin-left: 240px;
+      font-size: 14px;
+      position: absolute;
+      margin-top: -160px;
+      width: 80px;
+      height: 30px;
+      @include laptop-only {
+        margin-left: 320px;
+      }
+      &__nom {
+        @include darken-tertiary;
+        font-size: 14px;
         margin-top: 5px;
-        width: 250px;
         margin-left: 10px;
-    
       }
-      h4 {
-        font-weight: 300;
-        margin-top: -15px;
-        margin-left: 10px;
-        width: 150px;
-        height: 0;
+    }
+    img {
+      width: 100%;
+      height: 175px;
+      object-fit: cover;
+      aspect-ratio: 3/2;
+      object-position: center;
+      border-radius: 15px 15px 0px 0px;
+    }
+    &__nomplat {
+      font-weight: 500;
+      margin-top: 5px;
+      width: 250px;
+      margin-left: 10px;
+      position: absolute;
+      @include laptop-only {
+        margin-left: 80px;
       }
-        &__heart {
-          position: absolute;
-          margin-top: -40px;
-          margin-left: 270px;
-          color: black;
-          font-size: 10px;
-        }
-        .fa-heart { 
-          font-size: 25px;
-        }
+    }
+    h4 {
+      font-weight: 300;
+      margin-top: 25px;
+      margin-left: 10px;
+      width: 150px;
+      height: 0;
+      @include laptop-only {
+        margin-left: 80px;
+      }
     }
   }
-  
+}  
   

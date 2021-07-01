@@ -1,16 +1,55 @@
 .explore {
-    border-radius: 25px 25px 25px 25px;
-    width: 225px;
-    height: 50px;
-    margin-top: 70px;
-    border: none;
-      &--couleur {
-       color: white;
-       background: $color-secondary;
-       
-      }
-      &:hover {
-        @include hover;
-        @include hover-shadow;
-      }
-  }   
+  @include radius;
+  width: 225px;
+  height: 50px;
+  margin-top: 70px;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  z-index: 1;
+  &__resto{
+    width: 185px;
+    margin-top: 50px;
+    &__note-only {
+      @include laptop-only {
+        margin-top: 450px !important;
+      } 
+    }
+  }
+  &--desktop {
+    @include desktop-only {
+      position: absolute;
+      margin-top: 570px;
+    }
+    @include laptop-only {
+      position: absolute;
+      margin-top: 500px;
+    }
+  }
+  @include desktop-only {
+    transform: scale(1.15);
+  }
+  &:hover {
+    @include hover-shadow;
+    &::after {
+      opacity: 1; 
+    }
+  }
+  &--couleur {
+    color: white;
+    background: $lineargradient;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;  
+    left: 0;
+    @include radius;
+    @include lighten-gradient;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+  }  
+}   

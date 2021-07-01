@@ -1,14 +1,61 @@
 header { 
+<<<<<<< HEAD
   text-align: center;
    width: 100%;
+=======
+>>>>>>> cagnotte
   h1 {
     text-align: center;
   }
+  h3 {
+    position: absolute;
+    margin-top: -55px;
+    color: black;
+    margin-left: 30px;
+    @include desktop-only {
+      margin-left: 110px;
+      font-size: 20px;
+    }
+    @include tablette-only {
+      display: none;
+    }
+    @include mobile-only {
+      display: none;
+    }
+  }
+  .fa-home {
+    margin-top: -53px; 
+    position: absolute;
+    font-size: 19px;
+    margin-left: 105px;
+    color: black;
+    @include desktop-only {
+      margin-left: 190px;
+      font-size: 20px;
+      margin-top: -52px;
+    }
+    @include tablette-only {
+      display: none;
+    }
+    @include mobile-only {
+      display: none;
+    }
+  }
   .fa-arrow-left {
+<<<<<<< HEAD
      margin-top: 10px; 
+=======
+     margin-top: -55px; 
+>>>>>>> cagnotte
      position: absolute;
      font-size: 20px;
      margin-left: -150px;
      color: black;
+     @include laptop-only {
+       display: none;
+     }
+     @include desktop-only {
+       display: none;
+     }
   }
 }

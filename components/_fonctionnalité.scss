@@ -1,4 +1,5 @@
 .fonction {
+<<<<<<< HEAD
    display: flex;
    flex-direction: column;
    flex: wrap;
@@ -24,30 +25,110 @@
         margin-top: 30px;
       }
         
-      h4 {
-        font-size: 12px;
-        
-      }
-        &__feature {
-          position: absolute;
-          margin-top: 30px;
-          margin-left: 50px;
-          color: grey;  
-            &--colori {
-              color: $color-primary;
-            }
-        }
-          &__cercle {
-            border-radius: 50%;
-            height: 20px;
-            width: 20px;
-            margin-top: -40px;
-            margin-left: -10px;
-            color: white;
-            background: $color-primary;
-            text-align: center;
-          }
-         
-    }
-    
+=======
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  @include desktop-only {
+   @include resto-disposition;
   }
+  @include laptop-only {
+   @include resto-disposition;
+  }
+  @include tablette-only {
+    @include resto-disposition;
+  } 
+  h2 {
+    margin-left: -150px;
+    @include desktop-only {
+      position: absolute;
+      margin-top: -90px;
+      margin-left: -1220px;
+    }
+    @include laptop-only {
+      position: absolute;
+      margin-top: -100px;
+      margin-left: -790px;
+    }
+    @include tablette-only {
+      position: absolute;
+      margin-top: -100px;
+     margin-left: -550px;
+    }
+  }
+  &__fonctionnalité {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    height: 75px;
+    margin-top: 25px;
+    @include radius;
+    @include fonction--shadow;
+    @include desktop-only {
+      margin-top: 70px
+    }
+    @include tablette-only {
+      width: 210px;
+    }
+    @include laptop-only {
+      width: 300px;
+      
+    }
+    &--clair {
+      @include lighten-secondary;
+    }
+    h3 {
+      font-weight: 400;
+      text-align: center;
+      font-size: 16px;
+      @include tablette-only {
+        font-size: 14px;
+        margin-left: 30px; 
+      }
+    }  
+    h4 {
+      font-size: 12px;
+    }
+    &__feature {
+      position: absolute;
+      margin-left: -240px;
+      color: grey;  
+      @include laptop-only {
+        position: absolute;
+        margin-left: -220px;
+      }
+      @include tablette-only {
+        margin-left: -150px;
+      }
+      &--colori {
+        color: $color-primary;
+      }
+    }
+    &__cercle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      margin-left: -330px;
+      position: absolute;
+      @include tablette-only {
+        margin-left: -210px;
+      }
+      @include laptop-only {
+        margin-left: -300px;
+      }
+      &--fond {
+        background-color: $color-primary;
+      }
+>>>>>>> cagnotte
+      h4 {
+        color: white;
+        font-size: 11px;
+      }
+    }       
+  }   
+}

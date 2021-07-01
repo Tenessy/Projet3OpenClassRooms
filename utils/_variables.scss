@@ -2,5 +2,14 @@ $color-primary: #9356DC;
 $color-secondary:#FF79DA;
 $color-tertiary: #99E2D0;
 $grisclair:#f2f2f2;
-
- 
+$lineargradient: linear-gradient($color-secondary 10%, $color-primary);
+$num-progres: 4;
+$anim-dur: 2000ms;
+$anim-progres: 400ms;
+$anim-delay: $anim-progres / $num-progres;
+$breakpoints: (
+  mobile: 766px,
+  tablette: 767px,
+  laptop: 1023px,
+  desktop: 1440px
+);

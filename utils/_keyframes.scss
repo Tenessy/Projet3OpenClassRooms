@@ -1,0 +1,88 @@
+@keyframes progress-heart{
+  from {
+    background: none;
+  }
+  to {
+    background: red;
+  }
+}
+@keyframes apparition-progressive {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;  
+    transform:translateY(20%);
+  }
+  50% {
+    opacity: 0.65;
+  }
+  75% {
+    opacity: 0.85;
+  } 
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes validate-rotation {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes bars {
+  0% {
+    transform: translateY(-15px);
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(-45px);
+  }
+  75% {
+    transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(-75px);
+  }
+}
+@keyframes cache {
+  from {
+    overflow-y: hidden;
+  }
+  to {
+    overflow-y: hidden;
+  }
+}
+@keyframes fond {
+  0% {
+    background: rgba(0,0,0,0.8);
+    z-index: 99;
+  }
+  50% {
+    background: rgba(0,0,0,0.8);
+    z-index: 99;
+  }
+  75% {
+    background: rgba(0,0,0,0.8);
+    z-index: 99;
+  }
+  100% {
+    background: rgba(0,0,0,0.6);  
+    z-index: 99;
+  }
+}
+@keyframes slide-suspens {
+  from {
+    transform: translateX(0);
+    visibility: hidden;
+  }
+  to {
+    transform: translateX(-43px);
+    visibility: visible;
+  }
+}
+  

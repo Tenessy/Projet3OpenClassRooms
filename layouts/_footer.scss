@@ -1,5 +1,14 @@
 .basdepage {
+  display: flex;
+  margin-top: 0;
+  width: 100%;
+  background-color: #323333;
+  padding-bottom: 10px;
+  position: absolute;
+  
+  @include laptop-only {
     margin-top: 0;
+<<<<<<< HEAD
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -13,30 +22,145 @@
       
       h3{
         color: white;
-        font-size: 16px;
-       
-        margin-left: -20px;
+=======
+    padding-bottom: 0;
+  }
+  @include tablette-only {
+    display: flex;
+    flex-direction: row;
+  }
+  &__lien {
+    margin-left: 40px;
+    padding-top: 10px;
+    color: white;
+    @include desktop-only {
+      display: flex;
+      flex-direction: row;
+      margin-left: 40px
+    }
+    @include laptop-only {
+      display: flex;
+      flex-direction: row;
+    //  margin-left: -350px;
+      align-items: center;
+    }
+    @include tablette-only {
+      display: flex;
+      flex-direction: row;
+     
+    }
+    h3{
+      color: white;
+      font-size: 16px;
+      margin-left: -20px;
+      margin-top: 10px;
+      @include desktop-only {
+        @include tittle-footer;
+        margin-left: 70px;
       }
-      &__fafood {
-        margin-top: 0;
-        margin-left: -20px;
-        position: absolute;
-        font-size: 10px;
-      }
-      
-      h4 {
-        font-weight: 500;
-        margin-top: -2px;
-        color: white;
-        font-size: 13px;
+      @include laptop-only {
+        @include tittle-footer;
+        margin-top: -30px;
         margin-left: 0;
+>>>>>>> cagnotte
+        font-size: 16px;
       }
-      h5 {
-        font-weight: 400;
-        color: white;
-        margin-top: 0;
-        font-size: 13px;
-        margin-left: -20px;
+      @include tablette-only {
+        @include tittle-footer;
+        margin-left: -10px;
+        margin-top: 10px;
       }
     }
+    .fa-hands-helping {
+      @include mobile-only {
+        margin-top: -8px;
+      }
+      @include desktop-only {
+        margin-left: 315px;
+      }
+      @include laptop-only {
+        margin-left: 160px;
+        font-size: 12px;
+      }
+      @include tablette-only {
+        margin-left: 150px;
+      }
+    }
+    &__fafood {
+      margin-top: 5px;
+      margin-left: -20px;
+      position: absolute;
+      font-size: 10px;
+      @include desktop-only {
+        position: absolute;
+        margin-left: 75px;
+        margin-top: 50px;
+        font-size: 16px;
+      }
+      @include laptop-only {
+        position: absolute;
+        margin-left: 0;
+        margin-top: 35px;
+        font-size: 12px;
+      }
+      @include tablette-only {
+        position: absolute;
+        margin-left: -10px;
+        margin-top: 50px;
+        font-size: 12px;
+      }
+    }
+    h4 {
+      font-weight: 500;
+      margin-top: -10px;
+      color: white;
+      font-size: 13px;
+      margin-left: 0;
+      @include desktop-only {
+        margin-left: 100px;
+        margin-top: 50px;
+        font-size: 14px;
+      }
+      @include laptop-only {
+        margin-left: 30px;
+        margin-top: 50px;
+        font-size: 12px;
+      }
+      @include tablette-only {
+        margin-left: 40px;
+        margin-top: 50px;
+        font-size: 12px;
+      }
+    }
+    &--pos {
+      @include mobile-only {
+        margin-top: 20px !important;
+      }
+      @include tablette-only {
+        margin-left: 10px !important;
+      }
+    }
+    h5 {
+      font-weight: 400;
+      color: white;
+      margin-top: -10px;
+      font-size: 13px;
+      margin-left: -20px;
+      @include desktop-only {
+        margin-left: 100px;
+        margin-top: 50px;
+        font-size: 14px;
+      }
+      @include laptop-only {
+        margin-left: 30px;
+        margin-top: 50px;
+        font-size: 12px;
+      }
+      @include tablette-only {
+        margin-left: 30px;
+        margin-top: 50px;
+        font-size: 12px;
+      }
+    }
+  }
 }

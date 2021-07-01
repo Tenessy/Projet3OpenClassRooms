@@ -1,0 +1,84 @@
+.depassement {
+    width: 26.5px; 
+    height: 26.5px; 
+    background-color: white; 
+    padding-bottom: 0;
+    position: absolute;
+    transform: rotate(45deg);
+    border-radius: 28px 28px 8px 28px;
+    margin-left: 270px; 
+    margin-top: -45px; 
+    z-index: 2;
+    overflow: hidden;
+    &__poscarte {
+        margin-top: 15px;
+        @include desktop-only {
+            position: absolute;
+            margin-top: -260px;
+            margin-left: 310px;
+        }
+        @include laptop-only {
+          position: absolute;
+          margin-top: -260px;
+          margin-left: 280px;
+          &__note-only {
+             margin-top: -330px;
+          }
+        }
+        &--couleurfond {
+            background-color: $grisclair;
+        }
+    }
+    @include laptop-only {
+      margin-left: 340px;
+    }
+    .fa-heart {
+      margin-top: -40px;
+      position: relative;
+      display: block;
+      color: black;
+      transform: rotate(-45deg);
+      left: 5px;
+      right: 0;
+      bottom: 0;
+      font-size: 26px;
+      top: 45px;
+      z-index: 1;
+      &:hover{
+          cursor: pointer;
+        &::before {
+          background: linear-gradient(to right top, $color-secondary 10%, $color-primary);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          display: initial; 
+        }
+      }
+      &::before {
+        background-color: black;
+        color: transparent;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: initial; 
+      }
+      &:hover {
+        &::after {
+          transform: translateY(-21.1px);
+          cursor: pointer;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        border-radius: 3px 3px 3px 3px;
+        background: linear-gradient(to right top, $color-secondary 10%, $color-primary);
+        transition: transform 3s cubic-bezier(.13,.48,.55,.26);
+        top: 25px;
+        left: 1px;
+        right: 0;
+        bottom: 0;
+        height: 25px;
+        width: 24px;
+        z-index: -1;
+      } 
+    }
+}

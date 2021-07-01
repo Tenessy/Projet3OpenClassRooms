@@ -20,7 +20,52 @@
   background-color: lighten($color, 2%);
   border-radius: 2px 2px 2px 2px;
 }
-
 @mixin darken-tertiary ($color: $color-tertiary) {
   color: darken($color, 35%);
 }
+@mixin transform {
+  transition: transform 500ms ease-in-out, visibility 400ms ease-in-out; 
+}
+@mixin lighten-gradient ($color: $color-secondary , $color2: $color-primary) {
+  background: linear-gradient(lighten($color, 5%) 10%, lighten($color2, 5%));
+}
+@mixin desktop-only {
+  @media screen and (min-width: map-get($breakpoints, desktop)){ 
+    @content; 
+  }
+}
+@mixin laptop-only {
+  @media screen and (min-width: map-get($breakpoints, laptop)) 
+   and (max-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+@mixin tablette-only {
+  @media screen and (min-width: map-get($breakpoints, tablette)) 
+   and (max-width: map-get($breakpoints, laptop)) {
+    @content;
+  }
+}
+@mixin mobile-only {
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    @content;
+  }
+}
+@mixin position-tittle {
+  position: absolute;
+  margin-top: -230px;
+  margin-left: 0;
+}
+@mixin resto-disposition {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+@mixin tittle-footer {
+  margin-left: 20px;
+  position: absolute;
+  margin-top: 0;
+  
+} 

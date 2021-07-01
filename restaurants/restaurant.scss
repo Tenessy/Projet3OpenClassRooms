@@ -1,0 +1,36 @@
+
+@import "../utils/variables";
+@import "../utils/mixin";
+@import"../utils/keyframes";
+@import "../base/police";
+@import "../components/button";
+@import "../layouts/header";
+@import "../layouts/footer";
+@import "../layouts/carteresto";
+@import "../layouts/heart-anim";
+
+.basdepage {
+    position: absolute;
+    margin-top: 970px;
+    @include laptop-only {
+        margin-top: 0;
+    }
+    @include desktop-only {
+        margin-top: 0;
+    }
+}
+.position__basdepage {
+    margin-top: 1050px;
+    @include laptop-only {
+        margin-top: 0;
+    }
+    @include desktop-only {
+        margin-top: 0;
+    }
+}
+.nomresto__padding {
+    padding-bottom: 120px;
+    @include desktop-only {
+        padding-bottom: 180px;
+    }
+}
