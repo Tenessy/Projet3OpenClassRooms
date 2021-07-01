@@ -13,86 +13,85 @@
       aspect-ratio: 3/2;   
       object-fit: cover;
       width: 100%;
-      @include laptop-only {
-        width: 100%;
-        object-position: center;
-        object-fit: cover;
-        aspect-ratio: 3/2;  
+       @include laptop-only {
+          width: 100%;
+          object-position: center;
+          object-fit: cover;
+          aspect-ratio: 3/2;  
+        }
         @include desktop-only {
           aspect-ratio: 3/2;   
           object-fit: cover;
           width: 100%;
-        }
-      }
-    }   
-  }
-  .nomresto {
-      display: flex;
-      width: 100%;
-      position: absolute;
-      flex-direction: column;
-      align-items: center;
-      height: auto;
-      padding-bottom: 90px;
-      margin-top: -50px;
-      border-radius: 25px 25px 0px 0px;
-      background-color: #f2f2f2;
-      @include desktop-only {
-        @include resto-disposition;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        width: 90%;
-        border-radius: 25px 25px 0px 0px;
-        padding-bottom: 250px;
-        margin-top: -605px;
-      }
-      @include laptop-only {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        position: relative;
-        margin-top: -350px;
-        padding-bottom: 200px;
-        
-      }
-      &__entree {
-        &__note-only {
-          @include laptop-only {
-            margin-top: 50px !important;
-          }  
         }  
-      }
-      &__plat {
+    }   
+}
+.nomresto {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-bottom: 90px;
+    margin-top: -50px;
+    border-radius: 25px 25px 0px 0px;
+    background-color: #f2f2f2;
+    @include desktop-only {
+      @include resto-disposition;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      width: 90%;
+      border-radius: 25px 25px 0px 0px;
+      padding-bottom: 250px;
+      margin-top: -605px;
+    }
+    @include laptop-only {
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       width: 100%;
+       position: relative;
+       margin-top: -350px;
+       padding-bottom: 200px;   
+    }
+    &__entree {
         &__note-only {
-          @include laptop-only {
-            margin-top: -20px !important;
-          }
-        }
-      }
-      &__dessert {
+            @include laptop-only {
+               margin-top: 50px !important;
+            }  
+        }  
+    }
+    &__plat {
         &__note-only {
-          @include laptop-only {
-            margin-top: -20px !important;
-          }
+            @include laptop-only {
+              margin-top: -20px !important;
+            }
         }
-      }
-      section {
+    }
+    &__dessert {
+        &__note-only {
+            @include laptop-only {
+              margin-top: -20px !important;
+            }
+        }
+    }
+    section {
         @include desktop-only {
           margin-top: 90px;
           transform: scale(1.10);
-          section >.nomresto__carte {
-            margin-top: 50px;
-          }
+            section >.nomresto__carte {
+              margin-top: 50px;
+            }
         } 
         @include laptop-only {
           transform: scale(0.9);
           margin-left: 0;
           margin-top: 50px;
         }
-      }
-      &__france {
+    }
+    &__france {
         margin-left: -150px;
         @include desktop-only {
           @include position-tittle;
@@ -100,8 +99,8 @@
         @include laptop-only {
           @include position-tittle;
         }
-      }
-      &__palette {
+    }
+    &__palette {
         margin-left: -100px;
         @include desktop-only {
           @include position-tittle;
@@ -109,8 +108,8 @@
         @include laptop-only {
           @include position-tittle;
         }
-      }
-      &__delice {
+    }
+    &__delice {
         margin-left: -110px;
         @include desktop-only {
           @include position-tittle;  
@@ -119,8 +118,8 @@
           @include position-tittle;
         }
   
-      }
-      &__note {
+    }
+    &__note {
         margin-left: -100px;
         @include desktop-only {
           @include position-tittle;
@@ -129,8 +128,8 @@
           @include position-tittle;
           margin-top: -300px;
         }
-      }
-      &__entre {
+    }
+    &__entre {
         margin-left: 10px; 
         @include desktop-only {
           margin-left: 10px;
@@ -138,8 +137,8 @@
         @include laptop-only{
           margin-left: 10px;
         }
-      }
-      &__plat {
+    }
+    &__plat {
         margin-left: 10px;
         @include desktop-only {
           margin-left: 10px;
@@ -147,8 +146,8 @@
         @include laptop-only {
           margin-left: 10px;
         }
-      }
-      &__dessert {
+    }
+    &__dessert {
         margin-left: 10px;
         @include desktop-only {
           margin-left: 10px;
@@ -156,8 +155,8 @@
         @include laptop-only {
           margin-left: 10px;
         }
-      }
-     &__bordinferieur {
+    }
+    &__bordinferieur {
       border-bottom: 2px solid #99E2D0;
       width: 30px;
       margin-top: -8px;
@@ -169,46 +168,44 @@
         margin-left: 10px;
       }
     }
-     h3 {
+    h3 {
       font-size: 12px;
       font-weight: 100;
       margin-top: 30px;
-      @include laptop-only {
-        font-size: 14px;
-      }
-     }
-      &__carte {
-        width: 350px;
-        height: 60px;
-        overflow: hidden;
-        margin-top: 10px;
-        border-radius: 15px 15px 15px 15px;
-        background-color: white;
-        box-shadow: 0px 15px 15px 15px #e5e5e5;
-        &:hover > .nomresto__carte__ajouter{
+        @include laptop-only {
+          font-size: 14px;
+        }
+    }
+    &__carte {
+      width: 350px;
+      height: 60px;
+      overflow: hidden;
+      margin-top: 10px;
+      border-radius: 15px 15px 15px 15px;
+      background-color: white;
+      box-shadow: 0px 15px 15px 15px #e5e5e5;
+        &:hover > .nomresto__carte__ajouter { 
           transform: translateX(-100%);
-          & > .nomresto__carte__ajouter__validate {
-            animation: validate-rotation 500ms ease-in-out;
-          } 
+            & > .nomresto__carte__ajouter__validate {
+              animation: validate-rotation 500ms ease-in-out;
+            } 
         }
         &:hover > .nomresto__carte__position {
           transform: translateX(-40px);
-          @include mobile-only {
-            transform: translateX(-50px);
-          }
+            @include mobile-only {
+              transform: translateX(-50px);
+            }
         }
-      /*  &:hover > .nomresto__carte__suspension {
-         
-            transform: translateX(-52px);
-            visibility: visible;
-          
-          @include mobile-only {
-            transform: translateX(-61px);
-            visibility: visible;
-          }
-        }*/
-        
-        
+        &:hover > .nomresto__carte__suspension {
+            @include laptop-only {
+              transform: translateX(-52px);
+              visibility: visible;
+            }
+            @include mobile-only {
+               transform: translateX(-61px);
+              visibility: visible;
+            }
+        }
         &__progressive {
           animation: apparition-progressive $anim-dur backwards;
           @for $i from 1 through $num-progres {
@@ -295,6 +292,6 @@
             @include transform;
           }
         }   
-      }
-  }
+    }
+}  
   
