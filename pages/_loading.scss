@@ -1,8 +1,8 @@
 $cd-bars: #15DEA5;
 $size: 3vh;
 $num-bars: 5;
-$anim-dur: 600ms;
-$contain-dur: 3500ms;
+$anim-dur: 1000ms;
+$contain-dur: 4500ms;
 $anim-delay: $anim-dur / $num-bars;
 body {
   animation: cache 500ms;
@@ -26,7 +26,7 @@ body {
 }
 .container {
   opacity: 0;
-  transition: opacity 2000ms;
+  transition: opacity 3500ms;
   position: fixed;
   top: 0;
   left: 0;
