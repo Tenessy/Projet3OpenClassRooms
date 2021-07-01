@@ -1,5 +1,4 @@
 .menu {
-<<<<<<< HEAD
   
     text-align: center;
     width: 100%;
@@ -36,26 +35,6 @@
                   @include hover-shadow;
                 }
             }   
-=======
-  text-align: center;
-  width: 100%;
-  height: 300px;
-  margin-top: -20px;
-  &--grey {
-    background: $grisclair;
-  } 
-  &__heading {
-    font-weight: 500;
-    height: 0;
-    padding-top: 30px;
-  }
-  &__under__heading{
-    font-weight: 100;
-    font-size: 18px;
-    padding-top: 50px;
-    height: 0;
-  }            
->>>>>>> cagnotte
 }
 
 
