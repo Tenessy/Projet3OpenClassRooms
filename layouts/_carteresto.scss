@@ -168,27 +168,7 @@
     @include laptop-only {
       margin-left: 10px;
     }
-   }
-   &__heart {
-     font-weight: 100;
-     margin-left: 240px;
-     margin-top: -50px;
-     font-size: 22px;
-     @include desktop-only {
-       position: absolute;
-       margin-top: -250px;
-       transform: scale(1.15);
-       margin-left: 310px;
-     }
-     @include laptop-only {
-       position: absolute;
-       margin-top: -250px;
-       margin-left: 280px;
-      &__note-only {
-        margin-top: -320px;
-      }
-     }
-   }
+  }
    h3 {
     font-size: 12px;
     font-weight: 100;
