@@ -1,31 +1,4 @@
 .fonction {
-<<<<<<< HEAD
-   display: flex;
-   flex-direction: column;
-   flex: wrap;
-   align-items: center;
-    width: 100%;
-    margin-top: 50px;
-    h2 {
-      margin-left: -150px;
-    }
-    &__fonctionnalité {
-      width: 330px;
-      height: 75px;
-      margin-top: 25px;
-      @include radius;
-      @include fonction--shadow;
-        &--clair {
-          @include lighten-secondary;
-        }
-      h3 {
-        font-weight: 400;
-        text-align: center;
-        font-size: 16px;
-        margin-top: 30px;
-      }
-        
-=======
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,7 +97,6 @@
       &--fond {
         background-color: $color-primary;
       }
->>>>>>> cagnotte
       h4 {
         color: white;
         font-size: 11px;
