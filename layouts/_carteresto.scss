@@ -1,353 +1,299 @@
-<<<<<<< HEAD
-.nomresto {
-    width: 100%;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    padding-bottom: 60px;
-    margin-top: -70px;
-    border-radius: 25px 25px 0px 0px;
-    background-color: $grisclair;
-    h2{
-        margin-left: -140px;
-    }
-    &__bordinferieur{
-        border-bottom: 2px solid $color-tertiary;
-        width: 40px;
-        margin-top: -10px;
-        margin-left: -300px;
-    }
-    h3{
-        font-size: 14px;
-        font-weight: 100;
-        margin-left: -280px;
-        
-    }
-    &__carte {
-       width: 350px;
-       height: 60px;
-       margin-top: 10px;
-       border-radius: 15px 15px 15px 15px;
-       background-color: white;
-       @include shadow;
-       h4{
-           font-size: 12px;
-           margin-left: 20px;
-           font-weight: 500;
-       }
-       &__position {
-           position: absolute;
-           margin-top: -10px;
-           padding-left: 290px;
-       }
-       h5{
-           font-size: 10px;
-           font-weight: 100;
-           margin-left: 20px;
-           margin-top: -10px;
-       }
-    }
-
-}
-=======
 .resto-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -20px;
-  @include desktop-only {
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    @include radius;
-  }
-  img {
-    aspect-ratio: 3/2;   
-    object-fit: cover;
-    width: 100%;
-    @include laptop-only {
-      width: 100%;
-      object-position: center;
-      object-fit: cover;
-      aspect-ratio: 3/2;  
-      @include desktop-only {
-        aspect-ratio: 3/2;   
-        object-fit: cover;
-        width: 100%;
-      }
-    }
-  }   
-}
-.nomresto {
     display: flex;
-    width: 100%;
-    position: absolute;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: auto;
-    padding-bottom: 90px;
-    margin-top: -50px;
-    border-radius: 25px 25px 0px 0px;
-    background-color: #f2f2f2;
+    margin-top: -20px;
     @include desktop-only {
-      @include resto-disposition;
-      margin-left: auto;
       margin-right: auto;
-      position: relative;
-      width: 90%;
-      border-radius: 25px 25px 0px 0px;
-      padding-bottom: 250px;
-      margin-top: -605px;
-    }
-    @include laptop-only {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+      margin-left: auto;
       width: 100%;
-      position: relative;
-      margin-top: -350px;
-      padding-bottom: 200px;
-      
+      @include radius;
     }
-    &__entree {
-      &__note-only {
-        @include laptop-only {
-          margin-top: 50px !important;
-        }  
-      }  
-    }
-    &__plat {
-      &__note-only {
-        @include laptop-only {
-          margin-top: -20px !important;
+    img {
+      aspect-ratio: 3/2;   
+      object-fit: cover;
+      width: 100%;
+      @include laptop-only {
+        width: 100%;
+        object-position: center;
+        object-fit: cover;
+        aspect-ratio: 3/2;  
+        @include desktop-only {
+          aspect-ratio: 3/2;   
+          object-fit: cover;
+          width: 100%;
         }
       }
-    }
-    &__dessert {
-      &__note-only {
-        @include laptop-only {
-          margin-top: -20px !important;
-        }
-      }
-    }
-    section {
-      @include desktop-only {
-        margin-top: 90px;
-        transform: scale(1.10);
-        section >.nomresto__carte {
-          margin-top: 50px;
-        }
-      } 
-      @include laptop-only {
-        transform: scale(0.9);
-        margin-left: 0;
-        margin-top: 50px;
-      }
-    }
-    &__france {
-      margin-left: -150px;
-      @include desktop-only {
-        @include position-tittle;
-      }
-      @include laptop-only {
-        @include position-tittle;
-      }
-    }
-    &__palette {
-      margin-left: -100px;
-      @include desktop-only {
-        @include position-tittle;
-      }
-      @include laptop-only {
-        @include position-tittle;
-      }
-    }
-    &__delice {
-      margin-left: -110px;
-      @include desktop-only {
-        @include position-tittle;  
-      }
-      @include laptop-only {
-        @include position-tittle;
-      }
-
-    }
-    &__note {
-      margin-left: -100px;
-      @include desktop-only {
-        @include position-tittle;
-      }
-      @include laptop-only {
-        @include position-tittle;
-        margin-top: -300px;
-      }
-    }
-    &__entre {
-      margin-left: 10px; 
-      @include desktop-only {
-        margin-left: 10px;
-      }
-      @include laptop-only{
-        margin-left: 10px;
-      }
-    }
-    &__plat {
-      margin-left: 10px;
-      @include desktop-only {
-        margin-left: 10px;
-      }
-      @include laptop-only {
-        margin-left: 10px;
-      }
-    }
-    &__dessert {
-      margin-left: 10px;
-      @include desktop-only {
-        margin-left: 10px;
-      }
-      @include laptop-only {
-        margin-left: 10px;
-      }
-    }
-   &__bordinferieur {
-    border-bottom: 2px solid #99E2D0;
-    width: 30px;
-    margin-top: -8px;
-    margin-left: 10px;
-    @include desktop-only {
-      margin-left: 10px;
-    }
-    @include laptop-only {
-      margin-left: 10px;
-    }
+    }   
   }
-   h3 {
-    font-size: 12px;
-    font-weight: 100;
-    margin-top: 30px;
-    @include laptop-only {
-      font-size: 14px;
-    }
-   }
-    &__carte {
-      width: 350px;
-      height: 60px;
-      overflow: hidden;
-      margin-top: 10px;
-      border-radius: 15px 15px 15px 15px;
-      background-color: white;
-      box-shadow: 0px 15px 15px 15px #e5e5e5;
-      &:hover > .nomresto__carte__ajouter{
-        transform: translateX(-100%);
-        & > .nomresto__carte__ajouter__validate {
-          animation: validate-rotation 500ms ease-in-out;
-        } 
+  .nomresto {
+      display: flex;
+      width: 100%;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding-bottom: 90px;
+      margin-top: -50px;
+      border-radius: 25px 25px 0px 0px;
+      background-color: #f2f2f2;
+      @include desktop-only {
+        @include resto-disposition;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        width: 90%;
+        border-radius: 25px 25px 0px 0px;
+        padding-bottom: 250px;
+        margin-top: -605px;
       }
-      &:hover > .nomresto__carte__position {
-        transform: translateX(-40px);
-        @include mobile-only {
-          transform: translateX(-50px);
-        }
+      @include laptop-only {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        margin-top: -350px;
+        padding-bottom: 200px;
+        
       }
-      &:hover > .nomresto__carte__suspension {
-        @include laptop-only {
-          transform: translateX(-52px);
-          visibility: visible;
-        }
-        @include mobile-only {
-          transform: translateX(-61px);
-          visibility: visible;
-        }
+      &__entree {
+        &__note-only {
+          @include laptop-only {
+            margin-top: 50px !important;
+          }  
+        }  
       }
-      
-      &__progressive {
-        animation: apparition-progressive $anim-dur backwards;
-        @for $i from 1 through $num-progres {
-          &--#{$i} {
-            animation-delay: $anim-delay * $i;
+      &__plat {
+        &__note-only {
+          @include laptop-only {
+            margin-top: -20px !important;
           }
         }
       }
-      &__ajouter {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50px;
-        height: 61px;
-        border-radius: 0px 15px 15px 0px;
-        margin-left: 350px;
-        margin-top: -71px;
-        @include laptop-only {
-          margin-top: -72px;
+      &__dessert {
+        &__note-only {
+          @include laptop-only {
+            margin-top: -20px !important;
+          }
         }
-        &--color {
-          background-color: $color-tertiary;
+      }
+      section {
+        @include desktop-only {
+          margin-top: 90px;
+          transform: scale(1.10);
+          section >.nomresto__carte {
+            margin-top: 50px;
+          }
         } 
-        &--trans {
-          @include transform;
-        }  
-        &__validate {
-          color: white;
-          &--rotation {
-            transform: rotate(1deg);
-             @include transform;
-          }      
+        @include laptop-only {
+          transform: scale(0.9);
+          margin-left: 0;
+          margin-top: 50px;
         }
       }
-      h4 {
-        font-size: 13px;
+      &__france {
+        margin-left: -150px;
+        @include desktop-only {
+          @include position-tittle;
+        }
+        @include laptop-only {
+          @include position-tittle;
+        }
+      }
+      &__palette {
+        margin-left: -100px;
+        @include desktop-only {
+          @include position-tittle;
+        }
+        @include laptop-only {
+          @include position-tittle;
+        }
+      }
+      &__delice {
+        margin-left: -110px;
+        @include desktop-only {
+          @include position-tittle;  
+        }
+        @include laptop-only {
+          @include position-tittle;
+        }
+  
+      }
+      &__note {
+        margin-left: -100px;
+        @include desktop-only {
+          @include position-tittle;
+        }
+        @include laptop-only {
+          @include position-tittle;
+          margin-top: -300px;
+        }
+      }
+      &__entre {
+        margin-left: 10px; 
+        @include desktop-only {
+          margin-left: 10px;
+        }
+        @include laptop-only{
+          margin-left: 10px;
+        }
+      }
+      &__plat {
         margin-left: 10px;
-        font-weight: 500;
-        @include laptop-only {
-          font-size: 14px;
-          margin-top: 10px;
+        @include desktop-only {
+          margin-left: 10px;
         }
-      } 
-      &__position {
-        position: absolute;
-        margin-top: -10px;
-        padding-left: 290px;
-        z-index: 1;
         @include laptop-only {
-          margin-top: -10px !important;
-        }
-        &--trans {
-          transform: translateX(0);
-          @include transform;
+          margin-left: 10px;
         }
       }
-      h5 {
-        font-size: 11px;
-        font-weight: 100;
+      &__dessert {
         margin-left: 10px;
-        margin-top: -10px;
+        @include desktop-only {
+          margin-left: 10px;
+        }
         @include laptop-only {
-          font-size: 13px;
+          margin-left: 10px;
         }
       }
-      &__suspension {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        visibility: hidden;
-        padding-top: 0;
-        background-color: white;
-        width: 70px;
-        height: 20px;
-        margin-left: 250px;
-        margin-top: -37px;
-        font-size: 25px;
-        h6 {
-          margin-top: 30px;
-          margin-left: -40px;
-        }
-        &--trans {
-          @include transform;
-        }
-      }   
+     &__bordinferieur {
+      border-bottom: 2px solid #99E2D0;
+      width: 30px;
+      margin-top: -8px;
+      margin-left: 10px;
+      @include desktop-only {
+        margin-left: 10px;
+      }
+      @include laptop-only {
+        margin-left: 10px;
+      }
     }
-}
->>>>>>> cagnotte
+     h3 {
+      font-size: 12px;
+      font-weight: 100;
+      margin-top: 30px;
+      @include laptop-only {
+        font-size: 14px;
+      }
+     }
+      &__carte {
+        width: 350px;
+        height: 60px;
+        overflow: hidden;
+        margin-top: 10px;
+        border-radius: 15px 15px 15px 15px;
+        background-color: white;
+        box-shadow: 0px 15px 15px 15px #e5e5e5;
+        &:hover > .nomresto__carte__ajouter{
+          transform: translateX(-100%);
+          & > .nomresto__carte__ajouter__validate {
+            animation: validate-rotation 500ms ease-in-out;
+          } 
+        }
+        &:hover > .nomresto__carte__position {
+          transform: translateX(-40px);
+          @include mobile-only {
+            transform: translateX(-50px);
+          }
+        }
+        &:hover > .nomresto__carte__suspension {
+          @include laptop-only {
+            transform: translateX(-52px);
+            visibility: visible;
+          }
+          @include mobile-only {
+            transform: translateX(-61px);
+            visibility: visible;
+          }
+        }
+        
+        &__progressive {
+          animation: apparition-progressive $anim-dur backwards;
+          @for $i from 1 through $num-progres {
+            &--#{$i} {
+              animation-delay: $anim-delay * $i;
+            }
+          }
+        }
+        &__ajouter {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50px;
+          height: 61px;
+          border-radius: 0px 15px 15px 0px;
+          margin-left: 350px;
+          margin-top: -71px;
+          @include laptop-only {
+            margin-top: -72px;
+          }
+          &--color {
+            background-color: $color-tertiary;
+          } 
+          &--trans {
+            @include transform;
+          }  
+          &__validate {
+            color: white;
+            &--rotation {
+              transform: rotate(1deg);
+               @include transform;
+            }      
+          }
+        }
+        h4 {
+          font-size: 13px;
+          margin-left: 10px;
+          font-weight: 500;
+          @include laptop-only {
+            font-size: 14px;
+            margin-top: 10px;
+          }
+        } 
+        &__position {
+          position: absolute;
+          margin-top: -10px;
+          padding-left: 290px;
+          z-index: 1;
+          @include laptop-only {
+            margin-top: -10px !important;
+          }
+          &--trans {
+            transform: translateX(0);
+            @include transform;
+          }
+        }
+        h5 {
+          font-size: 11px;
+          font-weight: 100;
+          margin-left: 10px;
+          margin-top: -10px;
+          @include laptop-only {
+            font-size: 13px;
+          }
+        }
+        &__suspension {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          visibility: hidden;
+          padding-top: 0;
+          background-color: white;
+          width: 70px;
+          height: 20px;
+          margin-left: 250px;
+          margin-top: -37px;
+          font-size: 25px;
+          h6 {
+            margin-top: 30px;
+            margin-left: -40px;
+          }
+          &--trans {
+            @include transform;
+          }
+        }   
+      }
+  }
+  

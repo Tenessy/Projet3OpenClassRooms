@@ -1,9 +1,4 @@
 header { 
-<<<<<<< HEAD
-  text-align: center;
-   width: 100%;
-=======
->>>>>>> cagnotte
   h1 {
     text-align: center;
   }
@@ -42,14 +37,10 @@ header {
     }
   }
   .fa-arrow-left {
-<<<<<<< HEAD
-     margin-top: 10px; 
-=======
      margin-top: -55px; 
->>>>>>> cagnotte
      position: absolute;
      font-size: 20px;
-     margin-left: -150px;
+     margin-left: 30px;
      color: black;
      @include laptop-only {
        display: none;
