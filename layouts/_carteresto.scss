@@ -197,16 +197,17 @@
             transform: translateX(-50px);
           }
         }
-        &:hover > .nomresto__carte__suspension {
+      /*  &:hover > .nomresto__carte__suspension {
          
             transform: translateX(-52px);
             visibility: visible;
           
-         /* @include mobile-only {
+          @include mobile-only {
             transform: translateX(-61px);
             visibility: visible;
-          }*/
-        }
+          }
+        }*/
+        
         
         &__progressive {
           animation: apparition-progressive $anim-dur backwards;
