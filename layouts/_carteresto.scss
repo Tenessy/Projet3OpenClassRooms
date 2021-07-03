@@ -10,17 +10,15 @@
       @include radius;
     }
     img {
-      aspect-ratio: 3/2;   
       object-fit: cover;
       width: 100%;
        @include laptop-only {
           width: 100%;
           object-position: center;
           object-fit: cover;
-          aspect-ratio: 3/2;  
+
         }
-        @include desktop-only {
-          aspect-ratio: 3/2;   
+        @include desktop-only {  
           object-fit: cover;
           width: 100%;
         }  
@@ -219,10 +217,10 @@
           align-items: center;
           justify-content: center;
           width: 50px;
-          height: 61px;
+          height: 64px;
           border-radius: 0px 15px 15px 0px;
           margin-left: 350px;
-          margin-top: -71px;
+          margin-top: -72.5px;
           @include laptop-only {
             margin-top: -72px;
           }
