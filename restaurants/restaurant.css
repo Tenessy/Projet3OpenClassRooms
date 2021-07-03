@@ -870,18 +870,15 @@ header .fa-arrow-left {
             transform: translateX(-50px);
   }
 }
-@media screen and (min-width: 1023px) and (max-width: 1440px) {
-  .nomresto__carte:hover > .nomresto__carte__suspension {
-    -webkit-transform: translateX(-52px);
-            transform: translateX(-52px);
-    visibility: visible;
-  }
+.nomresto__carte:hover > .nomresto__carte__suspension {
+  -webkit-transform: translateX(-52px);
+          transform: translateX(-52px);
+  visibility: visible;
 }
 @media screen and (max-width: 766px) {
   .nomresto__carte:hover > .nomresto__carte__suspension {
-    -webkit-transform: translateX(-61px);
-            transform: translateX(-61px);
-    visibility: visible;
+    -webkit-transform: translateX(-65px);
+            transform: translateX(-65px);
   }
 }
 .nomresto__carte__progressive {
@@ -918,7 +915,7 @@ header .fa-arrow-left {
   height: 64px;
   border-radius: 0px 15px 15px 0px;
   margin-left: 350px;
-  margin-top: -72.5px;
+  margin-top: -77px;
 }
 @media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto__carte__ajouter {
@@ -946,9 +943,10 @@ header .fa-arrow-left {
   transition: transform 500ms ease-in-out, visibility 400ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 .nomresto__carte h4 {
-  font-size: 13px;
+  font-size: 14px;
   margin-left: 10px;
   font-weight: 500;
+  margin-top: 15px;
 }
 @media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto__carte h4 {
@@ -958,7 +956,7 @@ header .fa-arrow-left {
 }
 .nomresto__carte__position {
   position: absolute;
-  margin-top: -10px;
+  margin-top: -15px !important;
   padding-left: 290px;
   z-index: 1;
 }
@@ -976,7 +974,7 @@ header .fa-arrow-left {
   transition: transform 500ms ease-in-out, visibility 400ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 .nomresto__carte h5 {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 100;
   margin-left: 10px;
   margin-top: -10px;
@@ -1080,11 +1078,12 @@ header .fa-arrow-left {
   background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, #FF79DA), to(#9356DC));
   background: linear-gradient(to right top, #FF79DA 10%, #9356DC);
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   display: initial;
 }
 .depassement .fa-heart::before {
-  background-color: black;
+  background: black;
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
