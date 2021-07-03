@@ -194,15 +194,12 @@
               transform: translateX(-50px);
             }
         }
-        &:hover > .nomresto__carte__suspension {
-            @include laptop-only {
+        &:hover > .nomresto__carte__suspension {    
               transform: translateX(-52px);
               visibility: visible;
-            }
-            @include mobile-only {
-               transform: translateX(-61px);
-              visibility: visible;
-            }
+              @include mobile-only {
+                transform: translateX(-65px);
+              }
         }
         &__progressive {
           animation: apparition-progressive $anim-dur backwards;
@@ -220,7 +217,7 @@
           height: 64px;
           border-radius: 0px 15px 15px 0px;
           margin-left: 350px;
-          margin-top: -72.5px;
+          margin-top: -77px;
           @include laptop-only {
             margin-top: -72px;
           }
@@ -239,9 +236,10 @@
           }
         }
         h4 {
-          font-size: 13px;
+          font-size: 14px;
           margin-left: 10px;
           font-weight: 500;
+          margin-top: 15px;
           @include laptop-only {
             font-size: 14px;
             margin-top: 10px;
@@ -249,7 +247,7 @@
         } 
         &__position {
           position: absolute;
-          margin-top: -10px;
+          margin-top: -15px !important;
           padding-left: 290px;
           z-index: 1;
           @include laptop-only {
@@ -261,7 +259,7 @@
           }
         }
         h5 {
-          font-size: 11px;
+          font-size: 12px;
           font-weight: 100;
           margin-left: 10px;
           margin-top: -10px;

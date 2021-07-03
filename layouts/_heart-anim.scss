@@ -48,13 +48,13 @@
           cursor: pointer;
         &::before {
           background: linear-gradient(to right top, $color-secondary 10%, $color-primary);
-         -webkit-background-clip: text;
+          background-clip: text;
           -webkit-text-fill-color: transparent;
           display: initial; 
         }
       }
       &::before {
-        background-color: black;
+        background: black;
         color: transparent;
         background-clip: text;
         -webkit-text-fill-color: transparent;
