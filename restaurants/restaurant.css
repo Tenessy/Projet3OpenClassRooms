@@ -595,7 +595,6 @@ header .fa-arrow-left {
   }
 }
 .resto-img img {
-  aspect-ratio: 3/2;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -607,12 +606,10 @@ header .fa-arrow-left {
        object-position: center;
     -o-object-fit: cover;
        object-fit: cover;
-    aspect-ratio: 3/2;
   }
 }
 @media screen and (min-width: 1440px) {
   .resto-img img {
-    aspect-ratio: 3/2;
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
@@ -918,10 +915,10 @@ header .fa-arrow-left {
       -ms-flex-pack: center;
           justify-content: center;
   width: 50px;
-  height: 61px;
+  height: 64px;
   border-radius: 0px 15px 15px 0px;
   margin-left: 350px;
-  margin-top: -71px;
+  margin-top: -72.5px;
 }
 @media screen and (min-width: 1023px) and (max-width: 1440px) {
   .nomresto__carte__ajouter {
@@ -1083,7 +1080,6 @@ header .fa-arrow-left {
   background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, #FF79DA), to(#9356DC));
   background: linear-gradient(to right top, #FF79DA 10%, #9356DC);
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
   display: initial;
 }
