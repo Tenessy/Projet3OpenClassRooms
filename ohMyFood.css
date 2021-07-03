@@ -579,7 +579,7 @@ header .fa-arrow-left {
   display: initial;
 }
 .depassement .fa-heart::before {
-  background-color: black;
+  background: black;
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
