@@ -574,6 +574,7 @@ header .fa-arrow-left {
   background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, #FF79DA), to(#9356DC));
   background: linear-gradient(to right top, #FF79DA 10%, #9356DC);
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   display: initial;
 }
